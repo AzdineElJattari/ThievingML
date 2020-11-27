@@ -39,5 +39,5 @@ The second paragraph text
 ## :point_right: De spelomgeving <a name="spelomgeving"></a>
 The second paragraph text
 
-### :point_right: Speelveld object <a name="speelveldobject"></a>
+### ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1") Speelveld object <a name="speelveldobject"></a>
 This is a sub paragraph
