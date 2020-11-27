@@ -1,5 +1,11 @@
 <p align="center"><img alt="header-image" src="https://user-images.githubusercontent.com/56048370/100483716-28d5f580-30fa-11eb-887e-fc7a82af392c.png" width="100"/></p>
+<h2 align="center">Thieving ML-Agents</h2>
 <p align="center">:robot: A simple tutorial that will introduce you to the world of Machine Learning :robot:</p>
+<br>
+
+<p align="center">
+**[Forum](http://forum.serverless.com) • [Meetups](https://github.com/serverless-meetups/main) • [Twitter](https://twitter.com/goserverless) • [Facebook](https://www.facebook.com/serverless) • [Contact Us](mailto:hello@serverless.com)**
+</p>
 
 # Table of contents
 1. [Introduction](#introduction)
