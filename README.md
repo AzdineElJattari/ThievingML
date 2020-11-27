@@ -5,7 +5,10 @@
   
 <table align="center"><tr><td align="center" width="9999">
 
-**<img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488272-83c51800-310d-11eb-9353-332a22e894a3.png"/> [Youtube](http://forum.serverless.com) • [Report bug](https://github.com/serverless-meetups/main) • [Request feature](https://twitter.com/goserverless) • [Contact Us](mailto:hello@serverless.com)**
+**<img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488272-83c51800-310d-11eb-9353-332a22e894a3.png"/> [Youtube](http://forum.serverless.com) 
+• <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488272-83c51800-310d-11eb-9353-332a22e894a3.png"/> [Report bug](https://github.com/serverless-meetups/main) 
+• <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488272-83c51800-310d-11eb-9353-332a22e894a3.png"/>  [Request feature](https://twitter.com/goserverless) 
+• <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488272-83c51800-310d-11eb-9353-332a22e894a3.png"/>  [Contact Us](mailto:hello@serverless.com)**
 
 </td></tr></table>
 
