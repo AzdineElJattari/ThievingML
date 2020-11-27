@@ -2,8 +2,12 @@
 <h2 align="center">Thieving ML-Agents</h2>
 <p align="center">:robot: A simple tutorial that will introduce you to the world of Machine Learning :robot:</p>
 <br>
-    
-<[Forum](http://forum.serverless.com) • [Meetups](https://github.com/serverless-meetups/main) • [Twitter](https://twitter.com/goserverless) • [Facebook](https://www.facebook.com/serverless) • [Contact Us](mailto:hello@serverless.com)>
+  
+<table align="center"><tr><td align="center" width="9999">
+
+**[Youtube](http://forum.serverless.com) • [Report bug](https://github.com/serverless-meetups/main) • [Request feature](https://twitter.com/goserverless) • [Contact Us](mailto:hello@serverless.com)**
+
+</td></tr></table>
 
 # Table of contents
 1. [Introduction](#introduction)
