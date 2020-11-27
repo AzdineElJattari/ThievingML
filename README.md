@@ -7,7 +7,7 @@
 
 **<img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488272-83c51800-310d-11eb-9353-332a22e894a3.png"/> [Youtube](http://forum.serverless.com) 
 • <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488500-e10d9900-310e-11eb-8002-d5253dd66ade.png"/> [Report bug](https://github.com/serverless-meetups/main) 
-• <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488272-83c51800-310d-11eb-9353-332a22e894a3.png"/>  [Request feature](https://twitter.com/goserverless) 
+• <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488680-ee775300-310f-11eb-8db0-a382f1ce3e1b.png"/>  [Request feature](https://twitter.com/goserverless) 
 • <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488272-83c51800-310d-11eb-9353-332a22e894a3.png"/>  [Contact Us](mailto:hello@serverless.com)**
 
 </td></tr></table>
