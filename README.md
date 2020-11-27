@@ -7,17 +7,19 @@
 
 **<img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488272-83c51800-310d-11eb-9353-332a22e894a3.png"/> [Youtube](http://forum.serverless.com) 
 • <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488500-e10d9900-310e-11eb-8002-d5253dd66ade.png"/> [Report bug](https://github.com/serverless-meetups/main) 
-• <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488680-ee775300-310f-11eb-8db0-a382f1ce3e1b.png"/>  [Request feature](https://twitter.com/goserverless) 
-• <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488703-22527880-3110-11eb-8da1-1dda2acc4600.png"/>  [Contact Us](mailto:hello@serverless.com)**
+• <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488680-ee775300-310f-11eb-8db0-a382f1ce3e1b.png"/> [Request feature](https://twitter.com/goserverless) 
+• <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488703-22527880-3110-11eb-8da1-1dda2acc4600.png"/> [Contact Us](mailto:hello@serverless.com)**
 
 </td></tr></table>
 
 # Table of contents
-1. [Introductie](#introductie)
+1. [Introductie ThievingML](#introductie)
 2. [Spelverloop](#spelverloop)
-    - [test](#test)
-3. [Beloning](#beloning)
-3. [Speelveld](#speelveld)
+    - [Test subparagraaf](#test)
+3. [Observaties, acties & beloning systeem](#beloning)
+4. [Het speelveld](#speelveld)
+5. [De spelomgeving](#spelomgeving)
+    - [Speelveld object](#speelveldobject)
 
 ## :point_right: Introductie ThievingML <a name="introductie"></a>
 Some introduction text, formatted in heading 2 style
@@ -25,7 +27,7 @@ Some introduction text, formatted in heading 2 style
 ## :point_right: Spelverloop <a name="spelverloop"></a>
 The first paragraph text
 
-### Sub paragraph <a name="beloning"></a>
+### Test subparagraaf <a name="beloning"></a>
 This is a sub paragraph, formatted in heading 3 style  EXAMPLE
 
 ## :point_right: Observaties, acties & beloning systeem <a name="paragraph2"></a>
@@ -33,3 +35,9 @@ The second paragraph text
 
 ## :point_right: Het speelveld <a name="speelveld"></a>
 The second paragraph text
+
+## :point_right: De spelomgeving <a name="spelomgeving"></a>
+The second paragraph text
+
+### :point_right: Speelveld object <a name="speelveldobject"></a>
+This is a sub paragraph
