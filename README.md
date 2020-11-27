@@ -15,17 +15,21 @@
 # Table of contents
 1. [Introductie](#introductie)
 2. [Spelverloop](#spelverloop)
-    - [Sub paragraph](#subparagraph1)
-3. [Another paragraph](#paragraph2)
+    - [test](#test)
+3. [Beloning](#beloning)
+3. [Speelveld](#speelveld)
 
-## Introductie ThievingML <a name="introductie"></a>
+## :point_right: Introductie ThievingML <a name="introductie"></a>
 Some introduction text, formatted in heading 2 style
 
-## Some paragraph <a name="spelverloop"></a>
+## :point_right: Spelverloop <a name="spelverloop"></a>
 The first paragraph text
 
-### Sub paragraph <a name="subparagraph1"></a>
-This is a sub paragraph, formatted in heading 3 style
+### Sub paragraph <a name="beloning"></a>
+This is a sub paragraph, formatted in heading 3 style  EXAMPLE
 
-## Another paragraph <a name="paragraph2"></a>
+## :point_right: Observaties, acties & beloning systeem <a name="paragraph2"></a>
+The second paragraph text
+
+## :point_right: Het speelveld <a name="speelveld"></a>
 The second paragraph text
