@@ -4,13 +4,15 @@
 <br>
 
 <p align="center">
+    
 **[Forum](http://forum.serverless.com) • [Meetups](https://github.com/serverless-meetups/main) • [Twitter](https://twitter.com/goserverless) • [Facebook](https://www.facebook.com/serverless) • [Contact Us](mailto:hello@serverless.com)**
+
 </p>
 
 # Table of contents
 1. [Introduction](#introduction)
 2. [Some paragraph](#paragraph1)
-    1. [Sub paragraph](#subparagraph1)
+    - [Sub paragraph](#subparagraph1)
 3. [Another paragraph](#paragraph2)
 
 ## This is the introduction <a name="introduction"></a>
