@@ -22,8 +22,12 @@
     - [Dief object](#diefobject)
     - [Reiziger object](#reizigerobject)
     - [Scorebord object](#scorebordobject)
-6. [Het gedrag van de agent en de andere spelobjecten](#gedrag)
-    - [Overzicht methodes van de omgeving](#environment)
+6. [Spelobjecten scripts (C#)](#allescripts)
+7. [Environment.cs (omgeving)](#scripts)
+    - [Environment.cs (omgeving)](#scripts)
+        * [Overzicht methodes van de omgeving](#environment)
+        * [Object-variabelen van de omgeving](#environment2)
+        * [Initialisatie van de omgeving instantie](#environment3)
 
 ## :point_right: Introductie ThievingML <a name="introductie"></a>
 Some introduction text, formatted in heading 2 style
@@ -31,7 +35,7 @@ Some introduction text, formatted in heading 2 style
 ## :point_right: Spelverloop <a name="spelverloop"></a>
 The first paragraph text
 
-## :point_right: Observaties, acties & beloning systeem <a name="paragraph2"></a>
+## :point_right: Observaties, acties & beloning systeem <a name="beloning"></a>
 The second paragraph text
 
 ## :point_right: Het speelveld <a name="speelveld"></a>
@@ -55,5 +59,17 @@ This is a sub paragraph
 ## :point_right: Het gedrag van de Agent en de andere spelobjecten <a name="gedrag"></a>
 The second paragraph text
 
-### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Overzicht methodes van de omgeving (Environment) <a name="environment"></a>
+## :point_right: Spelobjecten scripts (C#) <a name="allescripts"></a>
+The second paragraph text
+
+### ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Environment.cs <a name="scripts"></a>
+The second paragraph text
+
+### ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Overzicht methodes van de omgeving <a name="environment"></a>
+This is a sub paragraph
+
+### ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Object-variabelen van de omgeving <a name="environment2"></a>
+This is a sub paragraph
+
+### ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Initialisatie van de omgeving instantie <a name="environment3"></a>
 This is a sub paragraph
