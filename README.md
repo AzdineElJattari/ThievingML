@@ -1,5 +1,5 @@
 <p align="center"><img alt="header-image" src="https://user-images.githubusercontent.com/56048370/100483716-28d5f580-30fa-11eb-887e-fc7a82af392c.png" width="100"/></p>
-<h2 align="center">Thieving ML-Agents</h2>
+<h2 align="center">Thieving ML</h2>
 <p align="center">:robot: Dit is een eenvoudige tutorial die je laat kennismaken met de wereld van Machine Learning :robot:</p>
 <br>
   
