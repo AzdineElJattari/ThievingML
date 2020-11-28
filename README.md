@@ -8,7 +8,7 @@
 **<img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488272-83c51800-310d-11eb-9353-332a22e894a3.png"/> [Youtube](https://www.youtube.com/channel/UCGW01S5Ri2RMa-qqXtO9Tzw?view_as=subscriber) 
 • <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100491240-533ba900-3122-11eb-815b-3beabde80e62.png"/> [Report bug](https://github.com/AzdineElJattari/ThievingML/issues) 
 • <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100491250-66e70f80-3122-11eb-9f76-c2cdd32ddfdc.png"/> [Request feature](https://github.com/AzdineElJattari/ThievingML/issues) 
-• <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488703-22527880-3110-11eb-8da1-1dda2acc4600.png"/> [Contact Us](https://www.youtube.com/channel/UCGW01S5Ri2RMa-qqXtO9Tzw?view_as=subscriber)**
+• <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488703-22527880-3110-11eb-8da1-1dda2acc4600.png"/> [Contact Us](thievingml@gmail.com)**
 
 </td></tr></table>
 
