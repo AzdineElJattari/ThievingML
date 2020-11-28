@@ -23,7 +23,6 @@
     - [Reiziger object](#reizigerobject)
     - [Scorebord object](#scorebordobject)
 6. [Spelobjecten scripts (C#)](#allescripts)
-7. [Environment.cs (omgeving)](#scripts)
     - [Environment.cs (omgeving)](#scripts)
         * [Overzicht methodes van de omgeving](#environment)
         * [Object-variabelen van de omgeving](#environment2)
