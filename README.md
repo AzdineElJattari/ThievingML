@@ -14,15 +14,16 @@
 
 # Inhoud
 1. [Introductie ThievingML](#introductie)
-2. [Spelverloop](#spelverloop)
-3. [Observaties, acties & beloning systeem](#beloning)
-4. [Het speelveld](#speelveld)
-5. [De spelomgeving](#spelomgeving)
+2. [Nodige software](#benodigdheden)
+3. [Spelverloop](#spelverloop)
+4. [Observaties, acties & beloning systeem](#beloning)
+5. [Het speelveld](#speelveld)
+6. [De spelomgeving](#spelomgeving)
     - [Speelveld object](#speelveldobject)
     - [Dief object](#diefobject)
     - [Reiziger object](#reizigerobject)
     - [Scorebord object](#scorebordobject)
-6. [Spelobjecten scripts (C#)](#allescripts)
+7. [Spelobjecten scripts (C#)](#allescripts)
     - [Environment.cs (omgeving) *code-snippets*](#scripts)
         * [Overzicht methodes van de omgeving](#environment)
         * [Object-variabelen van de omgeving](#environment2)
@@ -40,10 +41,18 @@
         * [OnActionReceived](#thief6)
         * [OnCollisionEnter](#thief7)
         * [DestroyObjects (Optimizations)](#thief8)
-7. [Resultaat in Tensorflow na één uur testen](#tensforlow)
+8. [Resultaat in Tensorflow na één uur testen](#tensforlow)
     
 ## :point_right: Introductie ThievingML <a name="introductie"></a>
 Some introduction text, formatted in heading 2 style
+
+## :point_right: Nodige software <a name="benodigdheden"></a>
+   [C# Visual Studio](https://visualstudio.microsoft.com/downloads/)
+    • [Unity 3D](https://unity3d.com/get-unity/download)
+    • [Python 3](https://www.python.org/downloads/)
+    • [Tensorflow](https://www.tensorflow.org/install/pip)
+    <br>
+    Optional: [Anaconda](https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/)
 
 ## :point_right: Spelverloop <a name="spelverloop"></a>
 The first paragraph text
