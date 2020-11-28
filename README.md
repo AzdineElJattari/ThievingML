@@ -33,6 +33,14 @@
     - [Traveller.cs (reiziger) *code-snippets*](#scripts2)        
     - [Thief.cs (dief) *code-snippets*](#scripts3)
         * [Overzicht van methodes](#thief)
+        * [Object variabelen](#thief2)
+        * [Initialiseer de dief](#thief3)
+        * [OnEpisodeBegin](#thief4)
+        * [Heuristic](#thief5)
+        * [OnActionReceived](#thief6)
+        * [OnCollisionEnter](#thief7)
+        * [DestroyObjects (Optimizations)](#thief8)
+7. [Resultaat in Tensorflow na één uur testen](#tensforlow)
     
 ## :point_right: Introductie ThievingML <a name="introductie"></a>
 Some introduction text, formatted in heading 2 style
@@ -72,25 +80,31 @@ The second paragraph text
 
 ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Overzicht methodes van de omgeving <a name="environment"></a>
 <br>
+<br>
 This is a sub paragraph
 
 ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Object-variabelen van de omgeving <a name="environment2"></a>
+<br>
 <br>
 This is a sub paragraph
 
 ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Initialisatie van de omgeving instantie <a name="environment3"></a>
 <br>
+<br>
 This is a sub paragraph
 
 ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Opkuisen van het speelveld <a name="environment4"></a>
+<br>
 <br>
 This is a sub paragraph
 
 ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Scorebord <a name="environment5"></a>
 <br>
+<br>
 This is a sub paragraph
 
 ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Genereren van een traveller <a name="environment6"></a>
+<br>
 <br>
 This is a sub paragraph
 
@@ -102,4 +116,44 @@ The second paragraph text
 
 ![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) Overzicht van methodes <a name="thief"></a>
 <br>
+<br>
+The second paragraph text
+
+
+![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) Object variabelen <a name="thief2"></a>
+<br>
+<br>
+The second paragraph text
+
+![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) Initialiseer de dief <a name="thief3"></a>
+<br>
+<br>
+The second paragraph text
+
+![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) OnEpisodeBegin <a name="thief4"></a>
+<br>
+<br>
+The second paragraph text
+
+![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) Heuristic <a name="thief5"></a>
+<br>
+<br>
+The second paragraph text
+
+![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) OnActionReceived <a name="thief6"></a>
+<br>
+<br>
+The second paragraph text
+
+![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) OnCollisionEnter <a name="thief7"></a>
+<br>
+<br>
+The second paragraph text
+
+![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) DestroyObjects (Optimizations) <a name="thief8"></a>
+<br>
+<br>
+The second paragraph text
+
+## :point_right: Resultaat in Tensorflow na één uur testen  <a name="tensorflow"></a>
 The second paragraph text
