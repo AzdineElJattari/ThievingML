@@ -73,7 +73,7 @@ Enerzijds hebben we de **Thief (Dief)** anderzijds hebben we de **Traveller (Rei
 **Spring fase** :point_down:
 <br>
 <br>
-Wanneer er dus een reiziger zal passeren zal de dief doormiddel van *sensoren* die zitten verwerkt in de ogen gaan omhoog gaan springen om zo succesvol langs achter in de zakken te zitten van de reiziger. Nu vraagt u zich nu af maar wat als de Agent er niet in slaagt om over de reiziger te springen? <br> Dan zal er een **bestraffing** plaats vinden. Ook zal er in het spel een scorebord zichtbaar zijn die u als developer duidelijk zal aantonen wanneer de Agent wordt *beloont | gestraft*.
+Wanneer er dus een reiziger zal passeren zal de dief doormiddel van *sensoren* die zitten verwerkt in de ogen gaan omhoog gaan springen om zo succesvol langs achter in de zakken te zitten van de reiziger. Nu vraagt u zich nu af maar wat als de Agent er niet in slaagt om over de reiziger te springen? <br> Dan zal er een **bestraffing** plaats vinden. Ook zal er in het spel een scorebord zichtbaar zijn die u als developer duidelijk zal aantonen wanneer de Agent wordt *beloont | gestraft*. Heel dit process zal zich blijven herhalen. Na verloop van tijd zal u bij het trainen van de Agent ook door hebben dat er niet meer gestraft zal worden en dus de Agent succesvol over de reiziger zal blijven springen.
 <br>
 <br>
 <img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100524479-c55ecd00-31b8-11eb-8c17-10c0b4aa21e9.png"/>
