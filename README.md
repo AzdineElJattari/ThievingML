@@ -61,13 +61,22 @@ Let's roll! :wink:
 
 ## :point_right: Spelverloop <a name="spelverloop"></a>
 Het spelverloop zal in deze hoofdstuk kort schematisch worden voorgesteld. In het spel dat u zal gaan ontwikkelen zullen er 2 objecten zijn met een hoofdrol.
-Enerzijds hebben we de **Thief (Dief)** anderzijds hebben we de **Traveller (Reiziger)**. De dief is diegene die doormiddel van *Machine Learning* zal gaan leren om zo snel mogelijk onder knie te krijgen wanneer er een reiziger passeert op zijn pad.
+Enerzijds hebben we de **Thief (Dief)** anderzijds hebben we de **Traveller (Reiziger)**. De dief is diegene die doormiddel van *Machine Learning* zal gaan leren om zo snel mogelijk onder knie te krijgen wanneer er een reiziger passeert op zijn pad om vervolgens te gaan springen zodat hij de reiziger dan succesvol kan gaan 'bestelen' en vervolgens zal de Agent **beloont** worden.
+<br>
+<br>
+**Detecteer fase** :point_down:
 <br>
 <br>
 <img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100524234-b840de80-31b6-11eb-8689-c0c04e5be2d5.png"/>
 <br>
 <br>
-Wanneer er dus een reiziger zal passeren zal de dief doormiddel van *sensoren* die zitten verwerkt in de ogen gaan omhoog gaan springen om zo succesvol langs achter in de zakken te zitten van de reiziger. Als de dief niet op tijd springt en dus in aanraking komt met de reiziger object zal de dief **gestraft** worden.
+**Spring fase** :point_down:
+<br>
+<br>
+Wanneer er dus een reiziger zal passeren zal de dief doormiddel van *sensoren* die zitten verwerkt in de ogen gaan omhoog gaan springen om zo succesvol langs achter in de zakken te zitten van de reiziger. Nu vraagt u zich nu af maar wat als de Agent er niet in slaagt om over de reiziger te springen? <br> Dan zal er een **bestraffing** plaats vinden. Ook zal er in het spel een scorebord zichtbaar zijn die u als developer duidelijk zal aantonen wanneer de Agent wordt *beloont | gestraft*.
+<br>
+<br>
+<img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100524479-c55ecd00-31b8-11eb-8c17-10c0b4aa21e9.png"/>
 
 ## :point_right: Observaties, acties & beloning systeem <a name="beloning"></a>
 The second paragraph text
