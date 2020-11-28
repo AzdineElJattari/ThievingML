@@ -19,8 +19,11 @@
 4. [Het speelveld](#speelveld)
 5. [De spelomgeving](#spelomgeving)
     - [Speelveld object](#speelveldobject)
-    - [Thief object](#thiefobject)
-    - [Traveller object](#travellerobject)
+    - [Dief object](#diefobject)
+    - [Reiziger object](#reizigerobject)
+    - [Scorebord object](#scorebordobject)
+6. [Het gedrag van de agent en de andere spelobjecten](#gedrag)
+    - [Overzicht methodes van de omgeving](#environment)
 
 ## :point_right: Introductie ThievingML <a name="introductie"></a>
 Some introduction text, formatted in heading 2 style
@@ -40,8 +43,17 @@ The second paragraph text
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Speelveld object <a name="speelveldobject"></a>
 This is a sub paragraph
 
-### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Thief object <a name="thiefobject"></a>
+### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Dief object <a name="diefobject"></a>
 This is a sub paragraph
 
-### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Traveller object <a name="travellerobject"></a>
+### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Reiziger object <a name="reizigerobject"></a>
+This is a sub paragraph
+
+### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Scorebord object <a name="scorebordobject"></a>
+This is a sub paragraph
+
+## :point_right: Het gedrag van de Agent en de andere spelobjecten <a name="gedrag"></a>
+The second paragraph text
+
+### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Overzicht methodes van de omgeving (Environment) <a name="environment"></a>
 This is a sub paragraph
