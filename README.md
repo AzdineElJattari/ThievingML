@@ -105,7 +105,9 @@ Nu moeten we een character gaan importeren. Om dit te doen druk je simpelweg op 
 Na het downloaden sleept u de bestanden rechtstreeks in uw *models* folder van uw Unity project.
 <br>
 <br>
-<img alt="header-image" width="60%" height="60%" align="center" src=""/>
+<img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100528009-4083ab80-31d8-11eb-9f33-925c4db06548.png"/>
+<br>
+<br>
 Aan het einde van dit tutorial zal u ook te zien krijgen hoe u animations kunt toevoegen voor uw character.
 
 ## :point_right: De spelomgeving <a name="spelomgeving"></a>
