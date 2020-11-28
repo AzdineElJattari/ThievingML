@@ -124,6 +124,17 @@ Onderstaande afbeelding toont u de volledige hiërarchie binnen de spelobjecten 
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Dief object <a name="diefobject"></a>
 In dit hoofdstuk zullen we de asset die u hebt gedownload van **Maximo** en die de rol van 'dief' op zich zal nemen gaan gebruiken en de instellingen geven die nodig zullen zijn zodat de *Dief object* zal kunnen springen & detecteren wanneer er een traveller op zijn pad is.
+<br>
+<br>
+<img alt="header-image" width="25%" height="15%" align="center" src="https://user-images.githubusercontent.com/56048370/100528351-2ba91700-31dc-11eb-82da-b70eaac37118.png"/>
+<br>
+<br>
+Selecteer de Dief object in Unity en voeg volgende componenten eraan toe :point_down:
+
+**Rigidbody**
+<br>
+<img alt="header-image" width="25%" height="15%" align="center" src=""/>
+
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Reiziger object <a name="reizigerobject"></a>
 This is a sub paragraph
