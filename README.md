@@ -12,7 +12,7 @@
 
 </td></tr></table>
 
-# Table of contents
+# Inleiding
 1. [Introductie ThievingML](#introductie)
 2. [Spelverloop](#spelverloop)
 3. [Observaties, acties & beloning systeem](#beloning)
@@ -23,11 +23,17 @@
     - [Reiziger object](#reizigerobject)
     - [Scorebord object](#scorebordobject)
 6. [Spelobjecten scripts (C#)](#allescripts)
-    - [Environment.cs (omgeving)](#scripts)
+    - [Environment.cs (omgeving) *code-snippets*](#scripts)
         * [Overzicht methodes van de omgeving](#environment)
         * [Object-variabelen van de omgeving](#environment2)
         * [Initialisatie van de omgeving instantie](#environment3)
-
+        * [Opkuisen van het speelveld](#environment4)
+        * [Scorebord](#environment5)
+        * [Genereren van een traveller (reiziger)](#environment6)
+    - [Traveller.cs (reiziger) *code-snippets*](#scripts2)        
+    - [Thief.cs (dief) *code-snippets*](#scripts3)
+        * [Overzicht van methodes](#thief)
+    
 ## :point_right: Introductie ThievingML <a name="introductie"></a>
 Some introduction text, formatted in heading 2 style
 
@@ -61,7 +67,7 @@ The second paragraph text
 ## :point_right: Spelobjecten scripts (C#) <a name="allescripts"></a>
 The second paragraph text
 
-### ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Environment.cs <a name="scripts"></a>
+### ![image info](https://user-images.githubusercontent.com/56048370/100490290-a4479f00-311a-11eb-839d-3ef719df2eb7.png) Environment.cs <a name="scripts"></a>
 The second paragraph text
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Overzicht methodes van de omgeving <a name="environment"></a>
@@ -72,3 +78,21 @@ This is a sub paragraph
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Initialisatie van de omgeving instantie <a name="environment3"></a>
 This is a sub paragraph
+
+### ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Opkuisen van het speelveld <a name="environment4"></a>
+This is a sub paragraph
+
+### ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Scorebord <a name="environment5"></a>
+This is a sub paragraph
+
+### ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Genereren van een traveller <a name="environment6"></a>
+This is a sub paragraph
+
+### ![image info](https://user-images.githubusercontent.com/56048370/100490290-a4479f00-311a-11eb-839d-3ef719df2eb7.png) Traveller.cs <a name="scripts2"></a>
+The second paragraph text
+
+### ![image info](https://user-images.githubusercontent.com/56048370/100490290-a4479f00-311a-11eb-839d-3ef719df2eb7.png) Thief.cs <a name="scripts3"></a>
+The second paragraph text
+
+### ![image info](https://user-images.githubusercontent.com/56048370/100490290-a4479f00-311a-11eb-839d-3ef719df2eb7.png) Overzicht van methodes <a name="thief"></a>
+The second paragraph text
