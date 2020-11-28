@@ -6,8 +6,8 @@
 <table align="center"><tr><td align="center" width="9999">
 
 **<img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488272-83c51800-310d-11eb-9353-332a22e894a3.png"/> [Youtube](http://forum.serverless.com) 
-• <img alt="header-image" align="center" src="https://github.com/AzdineElJattari/ThievingML/issues"/> [Report bug](https://github.com/serverless-meetups/main) 
-• <img alt="header-image" align="center" src="https://github.com/AzdineElJattari/ThievingML/issues"/> [Request feature](https://twitter.com/goserverless) 
+• <img alt="header-image" align="center" src=""/> [Report bug](https://github.com/AzdineElJattari/ThievingML/issues) 
+• <img alt="header-image" align="center" src=""/> [Request feature](https://github.com/AzdineElJattari/ThievingML/issues) 
 • <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488703-22527880-3110-11eb-8da1-1dda2acc4600.png"/> [Contact Us](mailto:hello@serverless.com)**
 
 </td></tr></table>
