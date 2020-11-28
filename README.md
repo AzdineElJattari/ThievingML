@@ -116,13 +116,14 @@ In dit hoofdstuk zullen we kort elke object overlopen die zal worden gecreëerd 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Speelveld object <a name="speelveldobject"></a>
 Het speelveld krijgt de naam *Street* en is eenvoudig vlak met de **schaal X = 14 | Y = 0.5 | Z = 1.5** en de **posities** en de **rotatie** op **X = Y = Z = 0** en dit geldt ook voor de **Mesh Collider**. Dit en alle andere objecten zitten vervat in een container object genaamd *Environment*. Dit zal ervoor zorgen dat het geheel later eenvoudig gedupliceerd kan worden.
 <br>
-Onderstaande afbeelding toont u de volledige hiërarchie binnen de spelobjecten met hun benaming zoals ze in deze handleiding gebruikt zullen worden.
+<br>
+Onderstaande afbeelding toont u de volledige hiërarchie binnen de spelobjecten met hun benaming zoals ze in deze handleiding gebruikt zullen worden. :point_down:
 <br>
 <br>
-<img alt="header-image" width="60%" height="60%" align="center" src=""/>
+<img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100528224-9d806100-31da-11eb-845e-6992cf4125a6.png"/>
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Dief object <a name="diefobject"></a>
-This is a sub paragraph
+In dit hoofdstuk zullen we de asset die u hebt gedownload van **Maximo** en die de rol van 'dief' op zich zal nemen gaan gebruiken en de instellingen geven die nodig zullen zijn zodat de *Dief object* zal kunnen springen & detecteren wanneer er een traveller op zijn pad is.
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Reiziger object <a name="reizigerobject"></a>
 This is a sub paragraph
