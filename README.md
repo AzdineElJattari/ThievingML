@@ -12,7 +12,7 @@
 
 </td></tr></table>
 
-# Inleiding
+# Inhoud
 1. [Introductie ThievingML](#introductie)
 2. [Spelverloop](#spelverloop)
 3. [Observaties, acties & beloning systeem](#beloning)
