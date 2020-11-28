@@ -79,7 +79,11 @@ Wanneer er dus een reiziger zal passeren zal de dief doormiddel van *sensoren* d
 <img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100524479-c55ecd00-31b8-11eb-8c17-10c0b4aa21e9.png"/>
 
 ## :point_right: Observaties, acties & beloning systeem <a name="beloning"></a>
-The second paragraph text
+| Observaties      | Acties | Beloning     |
+| :---        |    :----:   |          ---: |
+| Inkomende traveller      | Springen       | +0.1f   |
+| Inkomende traveller   | Geen        | -1f, einde episode      |
+| Geen   | Springen        | -0.2f      |
 
 ## :point_right: Het speelveld <a name="speelveld"></a>
 The second paragraph text
