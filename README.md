@@ -111,10 +111,15 @@ Na het downloaden sleept u de bestanden rechtstreeks in uw *models* folder van u
 Aan het einde van dit tutorial zal u ook te zien krijgen hoe u animations kunt toevoegen voor uw character.
 
 ## :point_right: De spelomgeving <a name="spelomgeving"></a>
-The second paragraph text
+In dit hoofdstuk zullen we kort elke object overlopen die zal worden gecreëerd in het project.
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Speelveld object <a name="speelveldobject"></a>
-This is a sub paragraph
+Het speelveld krijgt de naam *Street* en is eenvoudig vlak met de **schaal X = 14 | Y = 0.5 | Z = 1.5** en de **posities** en de **rotatie** op **X = Y = Z = 0** en dit geldt ook voor de **Mesh Collider**. Dit en alle andere objecten zitten vervat in een container object genaamd *Environment*. Dit zal ervoor zorgen dat het geheel later eenvoudig gedupliceerd kan worden.
+<br>
+Onderstaande afbeelding toont u de volledige hiërarchie binnen de spelobjecten met hun benaming zoals ze in deze handleiding gebruikt zullen worden.
+<br>
+<br>
+<img alt="header-image" width="60%" height="60%" align="center" src=""/>
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Dief object <a name="diefobject"></a>
 This is a sub paragraph
