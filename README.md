@@ -47,19 +47,27 @@
 In deze tutorial zullen we u als opkomende Machine Learning developer stap voor stap begeleiden hoe u doormiddel van *Machine Learning* - *ML Agents* en het gebruik van *Unity3D* en *C#* code een basic project tot stand kan brengen. Ook voor mensen **zonder** programmeer ervaring is het mogelijk om deze tutorial te volgen en succesvol de ThievingML project tot stand te brengen.
 <br>
 <br>
-Let's roll! :wink: <p>![image info]()</p>
+Let's roll! :wink: 
+<br>
+<br>
+<img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100522847-351a8b00-31ac-11eb-8180-03f4f6650e76.png"/>
 
 ## :point_right: Nodige software <a name="benodigdheden"></a>
    [C# Visual Studio](https://visualstudio.microsoft.com/downloads/) <img alt="header-image" width="20" height="20" align="center" src="https://user-images.githubusercontent.com/56048370/100491797-deb73900-3126-11eb-8461-f6925356a65c.png"/>
     • [Unity 3D](https://unity3d.com/get-unity/download) <img alt="header-image" width="20" height="20" align="center" src="https://user-images.githubusercontent.com/56048370/100491779-afa0c780-3126-11eb-82ef-5db5ece28fbd.png"/>
     • [Python 3](https://www.python.org/downloads/) <img alt="header-image" width="20" height="20" align="center" src="https://user-images.githubusercontent.com/56048370/100491828-0d351400-3127-11eb-8a45-fb6fe13e9a9d.png"/>
     • [Tensorflow](https://www.tensorflow.org/install/pip) <img alt="header-image" width="20" height="20" align="center" src="https://user-images.githubusercontent.com/56048370/100491704-11acfd00-3126-11eb-89af-1b9d01264ffb.png"/>
-    <br>
-    <br>
     *Optioneel:* [Anaconda](https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/) <img alt="header-image" width="20" height="20" align="center" src="https://user-images.githubusercontent.com/56048370/100491847-305fc380-3127-11eb-855a-35a78e5a9d91.png"/>
 
 ## :point_right: Spelverloop <a name="spelverloop"></a>
-The first paragraph text
+Het spelverloop zal in deze hoofdstuk kort schematisch worden voorgesteld. In het spel dat u zal gaan ontwikkelen zullen er 2 objecten zijn met een hoofdrol.
+Enerzijds hebben we de **Thief (Dief)** anderzijds hebben we de **Traveller (Reiziger)**. De dief is diegene die doormiddel van *Machine Learning* zal gaan leren om zo snel mogelijk onder knie te krijgen wanneer er een reiziger passeert op zijn pad.
+<br>
+<br>
+<img alt="header-image" width="60%" height="60%" align="center" src=""/>
+<br>
+<br>
+Wanneer er dus een reiziger zal passeren zal de dief doormiddel van *sensoren* die zitten verwerkt in de ogen gaan omhoog gaan springen om zo succesvol langs achter in de zakken te zitten van de reiziger. Als de dief niet op tijd springt en dus in aanraking komt met de reiziger object zal de dief **gestraft** worden.
 
 ## :point_right: Observaties, acties & beloning systeem <a name="beloning"></a>
 The second paragraph text
