@@ -15,20 +15,18 @@
 # Table of contents
 1. [Introductie ThievingML](#introductie)
 2. [Spelverloop](#spelverloop)
-    - [Test subparagraaf](#test)
 3. [Observaties, acties & beloning systeem](#beloning)
 4. [Het speelveld](#speelveld)
 5. [De spelomgeving](#spelomgeving)
     - [Speelveld object](#speelveldobject)
+    - [Thief object](#thiefobject)
+    - [Traveller object](#travellerobject)
 
 ## :point_right: Introductie ThievingML <a name="introductie"></a>
 Some introduction text, formatted in heading 2 style
 
 ## :point_right: Spelverloop <a name="spelverloop"></a>
 The first paragraph text
-
-### Test subparagraaf <a name="beloning"></a>
-This is a sub paragraph, formatted in heading 3 style  EXAMPLE
 
 ## :point_right: Observaties, acties & beloning systeem <a name="paragraph2"></a>
 The second paragraph text
@@ -40,4 +38,10 @@ The second paragraph text
 The second paragraph text
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Speelveld object <a name="speelveldobject"></a>
+This is a sub paragraph
+
+### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Thief object <a name="thiefobject"></a>
+This is a sub paragraph
+
+### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Traveller object <a name="travellerobject"></a>
 This is a sub paragraph
