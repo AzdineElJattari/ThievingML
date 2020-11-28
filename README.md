@@ -47,7 +47,7 @@
 Some introduction text, formatted in heading 2 style
 
 ## :point_right: Nodige software <a name="benodigdheden"></a>
-   [C# Visual Studio](https://visualstudio.microsoft.com/downloads/)
+   [C# Visual Studio](https://visualstudio.microsoft.com/downloads/) <img alt="header-image" width="20" height="20" align="center" src="https://user-images.githubusercontent.com/56048370/100491797-deb73900-3126-11eb-8461-f6925356a65c.png"/>
     • [Unity 3D](https://unity3d.com/get-unity/download) <img alt="header-image" width="20" height="20" align="center" src="https://user-images.githubusercontent.com/56048370/100491779-afa0c780-3126-11eb-82ef-5db5ece28fbd.png"/>
     • [Python 3](https://www.python.org/downloads/) 
     • [Tensorflow](https://www.tensorflow.org/install/pip) <img alt="header-image" width="20" height="20" align="center" src="https://user-images.githubusercontent.com/56048370/100491704-11acfd00-3126-11eb-89af-1b9d01264ffb.png"/>
