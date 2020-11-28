@@ -44,7 +44,10 @@
 8. [Resultaat in Tensorflow na één uur testen](#tensforlow)
     
 ## :point_right: Introductie ThievingML <a name="introductie"></a>
-Some introduction text, formatted in heading 2 style
+In deze tutorial zullen we u als opkomende Machine Learning developer stap voor stap begeleiden hoe u doormiddel van *Machine Learning* - *ML Agents* en het gebruik van *Unity3D* en *C#* code een basic project tot stand kan brengen. Ook voor mensen **zonder** programmeer ervaring is het mogelijk om deze tutorial te volgen en succesvol de ThievingML project tot stand te brengen.
+<br>
+<br>
+Let's roll! :wink: <p>![image info]()</p>
 
 ## :point_right: Nodige software <a name="benodigdheden"></a>
    [C# Visual Studio](https://visualstudio.microsoft.com/downloads/) <img alt="header-image" width="20" height="20" align="center" src="https://user-images.githubusercontent.com/56048370/100491797-deb73900-3126-11eb-8461-f6925356a65c.png"/>
