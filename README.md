@@ -41,7 +41,7 @@
         * [OnActionReceived](#thief6)
         * [OnCollisionEnter](#thief7)
         * [DestroyObjects (Optimizations)](#thief8)
-8. [Resultaat in Tensorflow na één uur testen](#tensforlow)
+8. [Resultaat in Tensorflow na één uur testen](#tensorflow)
     
 ## :point_right: Introductie ThievingML <a name="introductie"></a>
 In deze tutorial zullen we u als opkomende Machine Learning developer stap voor stap begeleiden hoe u doormiddel van *Machine Learning* - *ML Agents* en het gebruik van *Unity3D* en *C#* code een basic project tot stand kan brengen. Ook voor mensen **zonder** programmeer ervaring is het mogelijk om deze tutorial te volgen en succesvol de ThievingML project tot stand te brengen.
@@ -57,7 +57,7 @@ Let's roll! :wink:
     • [Unity 3D](https://unity3d.com/get-unity/download) <img alt="header-image" width="20" height="20" align="center" src="https://user-images.githubusercontent.com/56048370/100491779-afa0c780-3126-11eb-82ef-5db5ece28fbd.png"/>
     • [Python 3](https://www.python.org/downloads/) <img alt="header-image" width="20" height="20" align="center" src="https://user-images.githubusercontent.com/56048370/100491828-0d351400-3127-11eb-8a45-fb6fe13e9a9d.png"/>
     • [Tensorflow](https://www.tensorflow.org/install/pip) <img alt="header-image" width="20" height="20" align="center" src="https://user-images.githubusercontent.com/56048370/100491704-11acfd00-3126-11eb-89af-1b9d01264ffb.png"/>
-    *Optioneel:* [Anaconda](https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/) <img alt="header-image" width="20" height="20" align="center" src="https://user-images.githubusercontent.com/56048370/100491847-305fc380-3127-11eb-855a-35a78e5a9d91.png"/>
+    <br><br> *Optioneel:* [Anaconda](https://docs.anaconda.com/anaconda/user-guide/tasks/tensorflow/) <img alt="header-image" width="20" height="20" align="center" src="https://user-images.githubusercontent.com/56048370/100491847-305fc380-3127-11eb-855a-35a78e5a9d91.png"/>
 
 ## :point_right: Spelverloop <a name="spelverloop"></a>
 Het spelverloop zal in deze hoofdstuk kort schematisch worden voorgesteld. In het spel dat u zal gaan ontwikkelen zullen er 2 objecten zijn met een hoofdrol.
