@@ -79,6 +79,8 @@ Wanneer er dus een reiziger zal passeren zal de dief doormiddel van *sensoren* d
 <img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100524479-c55ecd00-31b8-11eb-8c17-10c0b4aa21e9.png"/>
 
 ## :point_right: Observaties, acties & beloning systeem <a name="beloning"></a>
+In onderstaand tabel krijgt u netjes een overzicht te zien hoe de beloningsysteem van ThievingML in elkaar zit. 
+<br>
 | Observaties      | Acties | Beloning     |
 | :---        |    :----:   |          ---: |
 | Inkomende traveller      | Springen       | +0.1f   |
@@ -86,7 +88,12 @@ Wanneer er dus een reiziger zal passeren zal de dief doormiddel van *sensoren* d
 | Geen   | Springen        | -0.2f      |
 
 ## :point_right: Het speelveld <a name="speelveld"></a>
-The second paragraph text
+Laten we beginnen met alle componenten op te bouwen om de simulatie mogelijk te maken. Men kan hiervoor **3D objecten** vanuit **Unity** maken zoals een kubus/cilinder voor de actoren of men kan sites gebruiken zoals [Mixamo](https://www.mixamo.com/#/) Unity assets of [Sketchfab](https://sketchfab.com) om zo characters te downloaden en te importeren in je Unity environment.
+<br>
+Voor deze tutorial gaan we gebruik maken van **Mixamo**. Kies een character die zal spelen als de Thief en eentje die de traveller moet voorstellen
+<br>
+<br>
+<img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100524234-b840de80-31b6-11eb-8689-c0c04e5be2d5.png"/>
 
 ## :point_right: De spelomgeving <a name="spelomgeving"></a>
 The second paragraph text
