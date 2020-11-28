@@ -64,7 +64,7 @@ Het spelverloop zal in deze hoofdstuk kort schematisch worden voorgesteld. In he
 Enerzijds hebben we de **Thief (Dief)** anderzijds hebben we de **Traveller (Reiziger)**. De dief is diegene die doormiddel van *Machine Learning* zal gaan leren om zo snel mogelijk onder knie te krijgen wanneer er een reiziger passeert op zijn pad.
 <br>
 <br>
-<img alt="header-image" width="60%" height="60%" align="center" src=""/>
+<img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100524234-b840de80-31b6-11eb-8689-c0c04e5be2d5.png"/>
 <br>
 <br>
 Wanneer er dus een reiziger zal passeren zal de dief doormiddel van *sensoren* die zitten verwerkt in de ogen gaan omhoog gaan springen om zo succesvol langs achter in de zakken te zitten van de reiziger. Als de dief niet op tijd springt en dus in aanraking komt met de reiziger object zal de dief **gestraft** worden.
