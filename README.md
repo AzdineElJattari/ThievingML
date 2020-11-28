@@ -93,7 +93,10 @@ Laten we beginnen met alle componenten op te bouwen om de simulatie mogelijk te 
 Voor deze tutorial gaan we gebruik maken van **Mixamo**. Kies een character die zal spelen als de Thief en eentje die de traveller moet voorstellen
 <br>
 <br>
-<img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100524234-b840de80-31b6-11eb-8689-c0c04e5be2d5.png"/>
+<img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100527881-21384e80-31d7-11eb-8776-22a8d130ca62.png"/>
+<br>
+<br>
+Nu moeten we een character gaan importeren. Om dit te doen druk je simpelweg op **download**, vervolgens kies je voor de optie **FBX** uit de dropdown met als titel *Format*.
 
 ## :point_right: De spelomgeving <a name="spelomgeving"></a>
 The second paragraph text
