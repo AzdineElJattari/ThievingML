@@ -194,8 +194,8 @@ Selecteer de Reiziger object in Unity en voeg volgende componenten eraan toe :po
 
 **Box Collider**
 <br>
-<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100528545-85124580-31de-11eb-8798-ff8249bffbe6.png"/>
-<br>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100529609-8a28c200-31e9-11eb-888e-c2ef0df6682a.png"/>
+> Een Box Collider zal ervoor zorgen wanneer er een collision is, u binnen uw script gebruik er gebruik van kan maken.
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Scorebord object <a name="scorebordobject"></a>
 This is a sub paragraph
