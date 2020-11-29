@@ -163,8 +163,10 @@ Zorg ervoor dat zoals op onderstaande foto de **Ray Perception** ter hoogste sta
 <br>
 Voeg een *Behavior parameters* toe met de naam **Thief** :point_down:
 <br>
-<img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100529232-8c891d00-31e5-11eb-8a4c-5308bc8eda53.png"/>
-
+<img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100529260-f30e3b00-31e5-11eb-8135-85ea9b9567f2.png"/>
+<br>
+Voeg een *Decision requester* toe (dit is een automatische trigger om de agent te dwingen iets te gaan doen) :point_down:
+<img alt="header-image" width="60%" height="60%" align="center" src=""/>
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Reiziger object <a name="reizigerobject"></a>
 This is a sub paragraph
