@@ -559,16 +559,50 @@ private void OnTriggerEnter(Collider collision)
     }
 }
 ```
+
 Als er een collision is met de tag ``"Point"`` dan zal de Thief (Dief) Agent **+0.1** punt erbij krijgen en moet ``stoleMoney`` op **True** gezet worden. Meer uitleg over de ``Point`` object zal hieronder in de volgende topic meegegeven worden.
 
 ![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **DestroyObjects (Optimizations)** <a name="thief8"></a>
 <br>
 Om de performantie tijdens de trainingsfase zo soepel mogelijk te laten verlopen moeten we een manier voorzien om de gespawnde **Travellers (Reizigers)** zo snel mogelijk te verwijderen nadat ze buiten het zicht zijn van de van de **Thief (Dief) Agent**. Om dit voor elkaar te krijgen gaan we een muur creëren en dit achter de Thief (Dief) Agent zetten zodat elke Traveller (Reiziger) dat botst met deze muur zal verwijderd worden van de scene.
 
-Maak een kubus 3D object aan en laat het er ongeveer uitzien als onderstaande afbeelding.
+Maak een kubus 3D object aan en laat het er ongeveer uitzien als onderstaande afbeelding. Confirmeer zeker dat deze "muur" net achter de Thief (Dief) Agent staat in de scene.
 <br>
 <br>
-<img alt="header-image" width="40%" height="40%" align="center" src=""/>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100551616-1ab2e100-3282-11eb-9be3-2d799fbcc628.png"/>
+<br>
+<br>
+Verander hierna de *material* design naar *default terrain standard* zoals op onderstaande afbeelding. Dit zal er voor gaan zorgen dat het onzichtbaar wordt.
+<br>
+<br>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100551621-20102b80-3282-11eb-8f1b-d3e45f066fc7.png"/>
+<br>
+<br>
+En tenslotte is er nog deze script bestand genaamd ``DestroyObjects`` die het object dat in collision gaat met de muur verwijderd.
+
+```csharp
+public class DestroyObjects : MonoBehaviour
+{
+    private void OnCollisionEnter(Collision other)
+    {
+        Destroy(other.gameObject);
+    }
+}
+```
+Binnen uw **Traveller** voegt u een empty object toe zoals op onderstaande afbeelding en geeft u het een random naam. In dit voorbeeld gebruiken we als naam *Coins*.
+<br>
+<br>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100551625-27373980-3282-11eb-9470-d874b2615595.png"/>
+<br>
+<br>
+Vervolgens voegt u een tag toe genaamd *Point*. Vervolgens gaan we nu nog de layer op *Ignore Raycast* zetten zoals op onderstaande afbeelding. En dan voegen we een *Box Collider* toe en moet de collider boven de **Traveller (Reiziger) 3D object** zijn in de **area** waarin de **Thief (Dief) Agent** zal springen. Elke keer als de Thief (Dief) hierboven springt zal hij een beloning krijgen door de ``OnTriggerEnter()`` methode.
+<br>
+<br>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100551630-2dc5b100-3282-11eb-8987-c9ff351c9df3.png"/>
+<br>
+<br>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100551638-3ddd9080-3282-11eb-88b0-f6b91e87d0ef.png"/>
+<br>
 <br>
 
 ## :point_right: Resultaat in Tensorflow na één uur testen  <a name="tensorflow"></a>
