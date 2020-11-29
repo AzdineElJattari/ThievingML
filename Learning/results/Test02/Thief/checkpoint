@@ -1,0 +1,2 @@
+model_checkpoint_path: "Thief-9641.ckpt"
+all_model_checkpoint_paths: "Thief-9641.ckpt"
