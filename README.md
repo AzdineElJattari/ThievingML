@@ -132,6 +132,7 @@ In dit hoofdstuk zullen we de asset die u hebt gedownload van **Maximo** en die 
 Selecteer de Dief object in Unity en voeg volgende componenten eraan toe :point_down:
 
 **Rigidbody**
+<br>
 <img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100528484-a888c080-31dd-11eb-84d2-64276f5f388a.png"/>
 <br>
 >Zorg ervoor dat de instellingen van de component *Rigibody* helemaal hetzelfde zijn als de afbeelding hierboven.
@@ -139,17 +140,17 @@ Selecteer de Dief object in Unity en voeg volgende componenten eraan toe :point_
 <br>
 
 **Box Collider**
+<br>
 <img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100528545-85124580-31de-11eb-8798-ff8249bffbe6.png"/>
 <br>
 
 >Zorg ervoor dat de instellingen van de component *Box Collider* helemaal hetzelfde zijn als de afbeelding hierboven.
 <br>
 
-> :bell: Nadat u bovenstaande instellingen hebt ingevoerd op beide componenten zal u een groen rechthoek te zien krijgen rond de dief object. Deze kunt u vervolgens vergroten of verkleinen door op het vierhoekje te drukken en te slepen. Zorg er wel voor dat de dief object qua formaat ongeveer volledig past in het groene rechthoek.
+> :bell: Nadat u bovenstaande instellingen hebt ingevoerd op beide componenten zal u een groen rechthoek te zien krijgen zoals op de afbeelding hieronder rond de dief object. Deze kunt u vervolgens vergroten of verkleinen door op het vierhoekje te drukken en te slepen. Zorg er wel voor dat de dief object qua formaat ongeveer volledig past in het groene rechthoek.
 
 <br>
 <img alt="header-image" width="25%" height="15%" align="center" src="https://user-images.githubusercontent.com/56048370/100528932-80e82700-31e2-11eb-85d6-724951c98007.png"/>
-<br>
 <br> 
 De acties die de dief object zal gaan uitvoeren zijn gebaseerd op observaties. Om ervoor te gaan zorgen dat de dief kan gaan observeren maken we gebruiken van **Ray Perception Sensor 3D** component. Voeg het toe met de instellingen vanuit onderstaande afbeelding. :point_down:
 <br>
@@ -159,14 +160,20 @@ De acties die de dief object zal gaan uitvoeren zijn gebaseerd op observaties. O
 
 Zorg ervoor dat zoals op onderstaande foto de **Ray Perception** ter hoogste staat van waar de ogen van de dief object staan. Voeg ook bij de *Detectable tags* de gedownloade **Reiziger object** toe. Dit zal ervoor zorgen dat de sensor de reiziger kan detecteren.
 <br>
+<br>
 <img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100529232-8c891d00-31e5-11eb-8a4c-5308bc8eda53.png"/>
+<br>
 <br>
 Voeg een *Behavior parameters* toe met de naam **Thief** :point_down:
 <br>
+<br>
 <img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100529260-f30e3b00-31e5-11eb-8135-85ea9b9567f2.png"/>
 <br>
+<br>
 Voeg een *Decision requester* toe (dit is een automatische trigger om de agent te dwingen iets te gaan doen) :point_down:
-<img alt="header-image" width="60%" height="60%" align="center" src=""/>
+<br>
+<br>
+<img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100529321-952e2300-31e6-11eb-8599-c602966b058e.png"/>
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Reiziger object <a name="reizigerobject"></a>
 This is a sub paragraph
