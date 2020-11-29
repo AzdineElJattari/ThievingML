@@ -179,10 +179,23 @@ Voeg een *Decision requester* toe (dit is een automatische trigger om de agent t
 We gaan ervan uit dat u ook een **Traveller (reiziger) 3D object** hebt gedownload van [Mixamo](https://www.mixamo.com/#/). Eens u het correct hebt gedownload en hebt geïmporteerd in Unity gaan we meteen ook voor dit 3D object een *Rigidbody* & *Box Collider* creëren.
 <br>
 <br>
-<img alt="header-image" width="25%" height="15%" align="center" src=""/>
+<img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100529463-5731fe80-31e8-11eb-9a6b-d26cf8d50d37.png"/>
 <br>
 <br>
-Selecteer de Dief object in Unity en voeg volgende componenten eraan toe :point_down:
+Selecteer de Reiziger object in Unity en voeg volgende componenten eraan toe :point_down:
+
+**Rigidbody**
+<br>
+<img alt="header-image" width="40%" height="40%" align="center" src=""/>
+<br>
+>Zorg ervoor dat de instellingen van de component *Rigibody* helemaal hetzelfde zijn als de afbeelding hierboven.
+<br>
+<br>
+
+**Box Collider**
+<br>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100528545-85124580-31de-11eb-8798-ff8249bffbe6.png"/>
+<br>
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Scorebord object <a name="scorebordobject"></a>
 This is a sub paragraph
