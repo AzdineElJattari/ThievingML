@@ -132,20 +132,14 @@ In dit hoofdstuk zullen we de asset die u hebt gedownload van **Maximo** en die 
 Selecteer de Dief object in Unity en voeg volgende componenten eraan toe :point_down:
 
 **Rigidbody**
-<br>
-<br>
 <img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100528484-a888c080-31dd-11eb-84d2-64276f5f388a.png"/>
-<br>
 <br>
 >Zorg ervoor dat de instellingen van de component *Rigibody* helemaal hetzelfde zijn als de afbeelding hierboven.
 <br>
 <br>
 
 **Box Collider**
-<br>
-<br>
 <img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100528545-85124580-31de-11eb-8798-ff8249bffbe6.png"/>
-<br>
 <br>
 
 >Zorg ervoor dat de instellingen van de component *Box Collider* helemaal hetzelfde zijn als de afbeelding hierboven.
