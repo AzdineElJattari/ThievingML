@@ -209,18 +209,24 @@ Dit 3D object met naam **ScoreBord** is een instantie van de **TextMeshPro** kla
 <img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100529815-61093100-31eb-11eb-909b-29b675c3fdfb.png"/>
 
 ## :point_right: Het gedrag van de Agent en de andere spelobjecten <a name="gedrag"></a>
-The second paragraph text
+In dit hoofdstuk zullen we overlopen wat het gedrag zal zijn en wat de uitgevoerde handelingen zullen zijn van *alle* 3D objecten in dit project. Dit zal bestaan uit code snippets vanuit **C#** met wat uitleg erbij. 
 
 ## :point_right: Spelobjecten scripts (C#) <a name="allescripts"></a>
-The second paragraph text
+Hieronder zullen we stapsgewijs per 3D object bekijken wat er moet staan in de script bestanden om ze een bepaald *gedrag* te geven en bepaalde *handelingen* te kunnen laten uitvoeren bij bepaalde *omstandigheden*.
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100490290-a4479f00-311a-11eb-839d-3ef719df2eb7.png) Environment.cs <a name="scripts"></a>
-The second paragraph text
+In het *Environment.cs* script bestand staat er code in om de **Traveller (Reiziger) / Thief (Dief)** te doen spawnen op het platform. Al deze handelingen zullen bij het runnen van het project automatisch worden uitgevoerd door Unity.
 
 ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Overzicht methodes van de omgeving <a name="environment"></a>
 <br>
 <br>
-This is a sub paragraph
+Maak een nieuw folder aan in de project folder genaamd *Scripts*. Hierin zullen alle script bestanden staan die we gaan creëren en zullen gebruiken op het juiste 3D object. De eerste script bestandje die we zullen maken krijgt de naam *Environment*. In de ``Environment Class`` zullen we volgende methodes gaan aanmaken.
+
+- ``InvokeRepeating`` -> Is een functie die ervoor zal zorgen dat de ``SpawnTravellers()`` methode op een bepaald tijdstip terug zal worden aangeroepen.
+
+- ``ClearEnvironment`` -> Deze methode zal dienen voor het opkuisen van eventuele 3D objecten van een vorig episode.
+
+- ``SpawnTravellers`` -> Deze methode zal ervoor zorgen dat de Traveller zal worden gespawnt op het platform.
 
 ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Object-variabelen van de omgeving <a name="environment2"></a>
 <br>
