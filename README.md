@@ -137,16 +137,19 @@ Selecteer de Dief object in Unity en voeg volgende componenten eraan toe :point_
 <img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100528484-a888c080-31dd-11eb-84d2-64276f5f388a.png"/>
 <br>
 <br>
-Zorg ervoor dat de instellingen van de component *Rigibody* helemaal hetzelfde zijn als de afbeelding hierboven.
+>Zorg ervoor dat de instellingen van de component *Rigibody* helemaal hetzelfde zijn als de afbeelding hierboven.
 <br>
 <br>
 **Box Collider**
 <br>
 <br>
-<img alt="header-image" width="40%" height="40%" align="center" src=""/>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100528545-85124580-31de-11eb-8798-ff8249bffbe6.png"/>
 <br>
 <br>
-Zorg ervoor dat de instellingen van de component *Box Collider* helemaal hetzelfde zijn als de afbeelding hierboven.
+>Zorg ervoor dat de instellingen van de component *Box Collider* helemaal hetzelfde zijn als de afbeelding hierboven.
+<br>
+<br>
+:triangular_flag_on_post: Nadat u bovenstaande instellingen hebt ingevoerd op beide componenten zal u een groen rechthoek te zien krijgen rond de dief object. Deze kunt u vervolgens vergroten of verkleinen door op het vierhoekje te drukken en te slepen. Zorg er wel voor dat de dief object qua formaat ongeveer volledig past in het groene rechthoek.
 
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Reiziger object <a name="reizigerobject"></a>
