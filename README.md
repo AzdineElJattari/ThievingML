@@ -379,7 +379,26 @@ private void FixedUpdate()
 ```
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100490290-a4479f00-311a-11eb-839d-3ef719df2eb7.png) Thief.cs <a name="scripts3"></a>
-The second paragraph text
+In het Thief.cs script bestand zal alle actie plaatsvinden. Want in dit script bestand zullen we van ons Thief (Dief) 3D object een **Agent** maken door de ``Thief class`` te laten overerven van de ``Agent class`` binnenin C#.
+
+```csharp
+public class Thief : Agent
+{
+}
+```
+Deze class zal in totaal 6 methoden gaan bevatten.
+
+- ``Initialize`` -> Zal zorgen voor een eenmalige initialisatie van de Agent.
+
+- ``OnEpisodeBegin`` -> De initialisatie bij de aanvang van een episode.
+
+- ``Heuristic`` -> Indien er geen NN gekoppeld is, dan zorgt deze methode voor een alternatieve manier voor het bepalen van de acties die de agent zal moeten uitvoeren. Dit kan bijvoorbeeld gebeuren via toetsaanslagen (KEYUP/KEYDOWN).
+
+- ``OnActionReceived`` -> De wijzigingen die het spelobject van de eagent moet ondergaan wanneer de speler via ``Heuristic`` of het ``NN`` voorstelt om een bepaalde actie uit te voeren.
+
+- ``OnTriggerEnter`` -> Deze functie word uitgevoerd wanneer er wordt gedetecteerd dat 2 3D objecten met elkaar **botsen** (in aanraking komen).
+
+- ``Jump`` -> Deze methode zal ervoor zorgen dat de **Thief (Dief) 3D object** zal springen over de **traveller** die op zijn pad terecht komt.
 
 ![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) Overzicht van methodes <a name="thief"></a>
 <br>
