@@ -190,18 +190,18 @@ Selecteer de Reiziger object in Unity en voeg volgende componenten eraan toe :po
 <br>
 >Zorg ervoor dat de instellingen van de component *Rigibody* helemaal hetzelfde zijn als de afbeelding hierboven.
 <br>
-<br>
 
 **Box Collider**
 <br>
 <img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100529609-8a28c200-31e9-11eb-888e-c2ef0df6682a.png"/>
+<br>
 <br>
 <img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100529671-2c48aa00-31ea-11eb-8c0e-2e029a180e60.png"/>
 > Een Box Collider zal ervoor zorgen wanneer er een collision is, u binnen uw script gebruik er gebruik van kan maken.
 
 Ten slotte zullen we voor dit 3D object ook nog een tag geven genaamd **Traveller** via de Unity GUI zoals op onderstaande afbeelding :point_down:
 <br>
-
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100529738-cf99bf00-31ea-11eb-9eb0-aa4e6bba5767.png"/>
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Scorebord object <a name="scorebordobject"></a>
 This is a sub paragraph
