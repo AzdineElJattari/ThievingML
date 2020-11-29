@@ -307,8 +307,15 @@ Onderstaande lijn code zal een traveller aanmaken en vervolgens zal deze dan doo
 newTraveller.transform.SetParent(travellers.transform);
 ```
 <br>
-<img alt="header-image" width="70%" height="70%" align="center" src=""/>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100549008-b3406580-3270-11eb-8827-5668fb55b1c3.png"/>
 <br>
+
+Vervolgens zullen de rotatie en de positie ook hetzelfde zijn als die van de travellers.
+
+```csharp
+newTraveller.transform.localPosition = travellers.transform.localPosition;
+newTraveller.transform.localRotation = travellers.transform.localRotation;
+```
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100490290-a4479f00-311a-11eb-839d-3ef719df2eb7.png) Traveller.cs <a name="scripts2"></a>
 The second paragraph text
