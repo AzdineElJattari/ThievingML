@@ -227,7 +227,7 @@ Maak een nieuw folder aan in de project folder genaamd *Scripts*. Hierin zullen 
 
 - ``SpawnTravellers`` -> Deze methode zal ervoor zorgen dat de Traveller zal worden gespawnt op het platform.
 
-![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Object-variabelen van de omgeving <a name="environment2"></a>
+![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) **Object-variabelen van de omgeving** <a name="environment2"></a>
 <br>
 We zullen een aantal *Public* object-variabelen gaan creëren.
 
@@ -249,21 +249,21 @@ De twee variabele ``spawnTime`` en ``delayInBetween`` worden in de methode ``Inv
 
 De rest van de variabelen zijn ``private`` en zullen ervoor zorgen dat de simulatie-omgeving een referentie heeft naar de agent, de variabelen ``scoreBoard`` en ``travellers`` zullen ook een referentie krijgen naar de simulatie-omgeving.
 
-![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Initialisatie van de omgeving instantie <a name="environment3"></a>
+![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) **Initialisatie van de omgeving instantie** <a name="environment3"></a>
 <br>
 Tijdens de initialisatie zullen bovenstaande referenties worden ingevuld door de volgende methode. :point_down:
 
 ```csharp
   public void OnEnable()
-    {
-        travellers = transform.Find("Travellers").gameObject;
-        scoreBoard = transform.GetComponentInChildren<TextMeshPro>();
-        thief = transform.GetComponentInChildren<Thief>();        
-    }
+  {
+      travellers = transform.Find("Travellers").gameObject;
+      scoreBoard = transform.GetComponentInChildren<TextMeshPro>();
+      thief = transform.GetComponentInChildren<Thief>();        
+  }
 ```
 Merk hierbij wel op dat de ``Find()`` methode en ``GetComponentInChildren()`` methode op de ``transform`` van ``Environment`` ervoor moeten zorgen dat uitsluitend child-objecten worden teruggegeven. Dit is belangrijk omdat we later de hele simulatie-omgeving gaan dupliceren binnen dezelfde scene in Unity. Andere methoden zoas ``GameObject.FindGameObjectWithTag`` zouden dus mogelijk de verkeerde referenties doorgeven, i.e. referenties naar objecten van een ander simulatie-omgeving, zonder hiervoor een foutmelding te geven.
 
-![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Opkuisen van het veld <a name="environment4"></a>
+![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) **Opkuisen van het veld** <a name="environment4"></a>
 <br>
 Bij het begin van elke episode zal het veld opnieuw in zijn beginsituatie terecht komen alvorens er nieuwe travellers worden gegenereerd.
 
