@@ -105,7 +105,7 @@ Nu moeten we een character gaan importeren. Om dit te doen druk je simpelweg op 
 Na het downloaden sleept u de bestanden rechtstreeks in uw *models* folder van uw Unity project.
 <br>
 <br>
-<img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100528009-4083ab80-31d8-11eb-9f33-925c4db06548.png"/>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100528009-4083ab80-31d8-11eb-9f33-925c4db06548.png"/>
 <br>
 <br>
 Aan het einde van dit tutorial zal u ook te zien krijgen hoe u animations kunt toevoegen voor uw character.
@@ -120,7 +120,7 @@ Het speelveld krijgt de naam *Street* en is eenvoudig vlak met de **schaal X = 1
 Onderstaande afbeelding toont u de volledige hiërarchie binnen de spelobjecten met hun benaming zoals ze in deze handleiding gebruikt zullen worden. :point_down:
 <br>
 <br>
-<img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100528224-9d806100-31da-11eb-845e-6992cf4125a6.png"/>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100528224-9d806100-31da-11eb-845e-6992cf4125a6.png"/>
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Dief object <a name="diefobject"></a>
 In dit hoofdstuk zullen we de asset die u hebt gedownload van **Maximo** en die de rol van 'dief' op zich zal nemen gaan gebruiken en de instellingen geven die nodig zullen zijn zodat de *Dief object* zal kunnen springen & detecteren wanneer er een traveller op zijn pad is.
@@ -133,7 +133,20 @@ Selecteer de Dief object in Unity en voeg volgende componenten eraan toe :point_
 
 **Rigidbody**
 <br>
-<img alt="header-image" width="25%" height="15%" align="center" src=""/>
+<br>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100528484-a888c080-31dd-11eb-84d2-64276f5f388a.png"/>
+<br>
+<br>
+Zorg ervoor dat de instellingen van de component *Rigibody* helemaal hetzelfde zijn als de afbeelding hierboven.
+<br>
+<br>
+**Box Collider**
+<br>
+<br>
+<img alt="header-image" width="40%" height="40%" align="center" src=""/>
+<br>
+<br>
+Zorg ervoor dat de instellingen van de component *Box Collider* helemaal hetzelfde zijn als de afbeelding hierboven.
 
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Reiziger object <a name="reizigerobject"></a>
