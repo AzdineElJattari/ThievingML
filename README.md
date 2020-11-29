@@ -279,8 +279,7 @@ public void ClearEnvironment()
 ```
 
 
-![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Scorebord <a name="environment5"></a>
-<br>
+![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) **Scorebord** <a name="environment5"></a>
 <br>
 Het scorebord moet continu de **belonging** (=score) gaan weergeven. Dit zal gebeuren door eenvoudigweg gebruik te gaan maken van de *getter* van de methode ``GetCumulativeReward()`` vanuit de ``Agent class``.
 
@@ -291,10 +290,18 @@ private void FixedUpdate()
 }
 ```
 
-![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Genereren van een traveller <a name="environment6"></a>
+![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) **Genereren van een traveller** <a name="environment6"></a>
 <br>
+Voor dit gedeelte zal u een 3D object moeten aanmaken zoals op onderstaande afbeelding en deze dan moeten plaatsen op het plek waar u wil dat de traveller opnieuw zal moeten spawnen op het **platform (scene)**. Als is hierin bent geslaagd dan zal onderstaand stukje code ervoor zorgen om de traveller te doen spawnen op het plek van de 3D object die u zojuist hebt aangemaakt.
+
+```csharp
+GameObject newTraveller = Instantiate(travellerPrefab.gameObject);
+```
 <br>
-This is a sub paragraph
+<img alt="header-image" width="60%" height="60%" align="center" src=""/>
+<br>
+
+Kort samengevat zal onderstaande lijn code een traveller aanmaken en vervolgens zal deze dan door ``setParent`` een traveller binnen de het lege **Travellers** worden gezet.
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100490290-a4479f00-311a-11eb-839d-3ef719df2eb7.png) Traveller.cs <a name="scripts2"></a>
 The second paragraph text
