@@ -269,13 +269,18 @@ Bij het begin van elke episode zal het veld opnieuw in zijn beginsituatie terech
 
 ```csharp
 public void ClearEnvironment()
+{
+    travellers = transform.Find("Travellers").gameObject;
+    foreach (Transform traveller in travellers.transform)
     {
-        travellers = transform.Find("Travellers").gameObject;
-        foreach (Transform traveller in travellers.transform)
-        {
-            GameObject.Destroy(traveller.gameObject);
-        }
+       GameObject.Destroy(traveller.gameObject);
+       travellers = transform.Find("Travellers").gameObject;
+       foreach (Transform traveller in travellers.transform)
+       {
+          GameObject.Destroy(traveller.gameObject);
+       }
     }
+}
 ```
 
 ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) **Scorebord** <a name="environment5"></a>
@@ -348,7 +353,30 @@ En nu kunnen we het ``Environment`` script gaan koppelen met de *Traveller* zoal
 <img alt="header-image" width="50%" height="50%" align="center" src="https://user-images.githubusercontent.com/56048370/100549525-a8d39b00-3273-11eb-8ce7-6251eaf618ef.png"/>
 <br>
 ### ![image info](https://user-images.githubusercontent.com/56048370/100490290-a4479f00-311a-11eb-839d-3ef719df2eb7.png) Traveller.cs <a name="scripts2"></a>
-The second paragraph text
+In dit script zal de snelheid worden bepaald van een *traveller*. Doormiddel van onderstaande velden kan men het **minimum** en **maximum** snelheid bepalen van de traveller.
+
+```csharp
+[SerializeField] private float minSpeed;
+[SerializeField] private float maxSpeed;
+```
+
+Vervolgens hebben we de **Rigidbody** variabele nodig van de traveller om zo een bepaalde snelheid erop te zetten. Het is ook belangrijk om een random te zetten tussen de **minimum** en **maximum** zodat we het niet te simpel maken voor de traveller.
+
+```csharp
+private Rigidbody Rigidbody;
+```
+```csharp
+private void Awake()
+{
+    Rigidbody = GetComponent<Rigidbody>();
+}
+```
+```csharp
+private void FixedUpdate()
+{
+    Rigidbody.velocity = Vector3.back * Random.Range(minSpeed,maxSpeed);
+}
+```
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100490290-a4479f00-311a-11eb-839d-3ef719df2eb7.png) Thief.cs <a name="scripts3"></a>
 The second paragraph text
