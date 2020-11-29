@@ -278,7 +278,6 @@ public void ClearEnvironment()
     }
 ```
 
-
 ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) **Scorebord** <a name="environment5"></a>
 <br>
 Het scorebord moet continu de **belonging** (=score) gaan weergeven. Dit zal gebeuren door eenvoudigweg gebruik te gaan maken van de *getter* van de methode ``GetCumulativeReward()`` vanuit de ``Agent class``.
@@ -316,7 +315,37 @@ Vervolgens zullen de rotatie en de positie ook hetzelfde zijn als die van de tra
 newTraveller.transform.localPosition = travellers.transform.localPosition;
 newTraveller.transform.localRotation = travellers.transform.localRotation;
 ```
+<br>
+<img alt="header-image" width="25%" height="15%" align="center" src="https://user-images.githubusercontent.com/56048370/100549166-922c4480-3271-11eb-80ac-689038196906.png"/>
+:arrow_up_small:
+:arrow_down_small:
+<br>
+<img alt="header-image" width="50%" height="50%" align="center" src="https://user-images.githubusercontent.com/56048370/100549168-93f60800-3271-11eb-8fe7-2cd2cbb0af6a.png"/>
 
+Onderstaande methode genaamd ``SpawnTravellers()`` zal ervoor gaan zorgen dat binnen een bepaalde gekozen duratie een traveller wordt gespawnt.
+
+```csharp
+public void SpawnTravellers()
+{
+    GameObject newTraveller = Instantiate(travellerPrefab.gameObject);
+    newTraveller.transform.SetParent(travellers.transform);
+    newTraveller.transform.localPosition = travellers.transform.localPosition;
+    newTraveller.transform.localRotation = travellers.transform.localRotation;
+}
+```
+
+Binnen de ``Start()`` methode gaan we nu de volgende lijn code schrijven.
+
+```csharp
+void Start()
+{
+    InvokeRepeating("SpawnTravellers", SpawnTime, delayInBetween);
+}
+```
+En nu kunnen we het ``Environment`` script gaan koppelen met de *Traveller* zoals op onderstaande afbeelding.
+<br>
+<img alt="header-image" width="50%" height="50%" align="center" src="https://user-images.githubusercontent.com/56048370/100549168-93f60800-3271-11eb-8fe7-2cd2cbb0af6a.png"/>
+<br>
 ### ![image info](https://user-images.githubusercontent.com/56048370/100490290-a4479f00-311a-11eb-839d-3ef719df2eb7.png) Traveller.cs <a name="scripts2"></a>
 The second paragraph text
 
