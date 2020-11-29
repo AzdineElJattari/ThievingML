@@ -386,6 +386,8 @@ public class Thief : Agent
 {
 }
 ```
+
+![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **Overzicht van methodes** <a name="thief"></a>
 Deze class zal in totaal 6 methoden gaan bevatten.
 
 - ``Initialize`` -> Zal zorgen voor een eenmalige initialisatie van de Agent.
@@ -400,15 +402,8 @@ Deze class zal in totaal 6 methoden gaan bevatten.
 
 - ``Jump`` -> Deze methode zal ervoor zorgen dat de **Thief (Dief) 3D object** zal springen over de **traveller** die op zijn pad terecht komt.
 
-![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) Overzicht van methodes <a name="thief"></a>
-<br>
-<br>
-The second paragraph text
 
-
-![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) Object variabelen <a name="thief2"></a>
-<br>
-<br>
+![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **Object variabelen** <a name="thief2"></a>
 The second paragraph text
 
 ![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) Initialiseer de dief <a name="thief3"></a>
