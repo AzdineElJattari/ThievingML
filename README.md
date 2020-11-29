@@ -298,10 +298,17 @@ Voor dit gedeelte zal u een 3D object moeten aanmaken zoals op onderstaande afbe
 GameObject newTraveller = Instantiate(travellerPrefab.gameObject);
 ```
 <br>
-<img alt="header-image" width="60%" height="60%" align="center" src=""/>
+<img alt="header-image" width="70%" height="70%" align="center" src="https://user-images.githubusercontent.com/56048370/100548917-1ed60300-3270-11eb-9c61-fa4ad02ce79c.png"/>
 <br>
 
-Kort samengevat zal onderstaande lijn code een traveller aanmaken en vervolgens zal deze dan door ``setParent`` een traveller binnen de het lege **Travellers** worden gezet.
+Onderstaande lijn code zal een traveller aanmaken en vervolgens zal deze dan door ``setParent()`` methode een traveller binnen de lege ``Travellers`` worden gezet.
+
+```csharp
+newTraveller.transform.SetParent(travellers.transform);
+```
+<br>
+<img alt="header-image" width="70%" height="70%" align="center" src=""/>
+<br>
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100490290-a4479f00-311a-11eb-839d-3ef719df2eb7.png) Traveller.cs <a name="scripts2"></a>
 The second paragraph text
