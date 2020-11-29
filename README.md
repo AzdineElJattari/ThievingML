@@ -204,7 +204,10 @@ Ten slotte zullen we voor dit 3D object ook nog een tag geven genaamd **Travelle
 <img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100529738-cf99bf00-31ea-11eb-9eb0-aa4e6bba5767.png"/>
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Scorebord object <a name="scorebordobject"></a>
-This is a sub paragraph
+Dit 3D object met naam **ScoreBord** is een instantie van de **TextMeshPro** klasse. Dit 3D object zal de *Cumulative reward* (Gecumuleerde beloning) bevatten en weergeven.
+<br>
+<br>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100529815-61093100-31eb-11eb-909b-29b675c3fdfb.png"/>
 
 ## :point_right: Het gedrag van de Agent en de andere spelobjecten <a name="gedrag"></a>
 The second paragraph text
