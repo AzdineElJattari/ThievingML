@@ -269,13 +269,18 @@ Bij het begin van elke episode zal het veld opnieuw in zijn beginsituatie terech
 
 ```csharp
 public void ClearEnvironment()
+{
+    travellers = transform.Find("Travellers").gameObject;
+    foreach (Transform traveller in travellers.transform)
     {
-        travellers = transform.Find("Travellers").gameObject;
-        foreach (Transform traveller in travellers.transform)
-        {
-            GameObject.Destroy(traveller.gameObject);
-        }
+       GameObject.Destroy(traveller.gameObject);
+       travellers = transform.Find("Travellers").gameObject;
+       foreach (Transform traveller in travellers.transform)
+       {
+          GameObject.Destroy(traveller.gameObject);
+       }
     }
+}
 ```
 
 ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) **Scorebord** <a name="environment5"></a>
@@ -348,20 +353,57 @@ En nu kunnen we het ``Environment`` script gaan koppelen met de *Traveller* zoal
 <img alt="header-image" width="50%" height="50%" align="center" src="https://user-images.githubusercontent.com/56048370/100549525-a8d39b00-3273-11eb-8ce7-6251eaf618ef.png"/>
 <br>
 ### ![image info](https://user-images.githubusercontent.com/56048370/100490290-a4479f00-311a-11eb-839d-3ef719df2eb7.png) Traveller.cs <a name="scripts2"></a>
-The second paragraph text
+In dit script zal de snelheid worden bepaald van een *traveller*. Doormiddel van onderstaande velden kan men het **minimum** en **maximum** snelheid bepalen van de traveller.
+
+```csharp
+[SerializeField] private float minSpeed;
+[SerializeField] private float maxSpeed;
+```
+
+Vervolgens hebben we de **Rigidbody** variabele nodig van de traveller om zo een bepaalde snelheid erop te zetten. Het is ook belangrijk om een random te zetten tussen de **minimum** en **maximum** zodat we het niet te simpel maken voor de traveller.
+
+```csharp
+private Rigidbody Rigidbody;
+```
+```csharp
+private void Awake()
+{
+    Rigidbody = GetComponent<Rigidbody>();
+}
+```
+```csharp
+private void FixedUpdate()
+{
+    Rigidbody.velocity = Vector3.back * Random.Range(minSpeed,maxSpeed);
+}
+```
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100490290-a4479f00-311a-11eb-839d-3ef719df2eb7.png) Thief.cs <a name="scripts3"></a>
-The second paragraph text
+In het Thief.cs script bestand zal alle actie plaatsvinden. Want in dit script bestand zullen we van ons Thief (Dief) 3D object een **Agent** maken door de ``Thief class`` te laten overerven van de ``Agent class`` binnenin C#.
 
-![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) Overzicht van methodes <a name="thief"></a>
-<br>
-<br>
-The second paragraph text
+```csharp
+public class Thief : Agent
+{
+}
+```
+
+![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **Overzicht van methodes** <a name="thief"></a>
+Deze class zal in totaal 6 methoden gaan bevatten.
+
+- ``Initialize`` -> Zal zorgen voor een eenmalige initialisatie van de Agent.
+
+- ``OnEpisodeBegin`` -> De initialisatie bij de aanvang van een episode.
+
+- ``Heuristic`` -> Indien er geen NN gekoppeld is, dan zorgt deze methode voor een alternatieve manier voor het bepalen van de acties die de agent zal moeten uitvoeren. Dit kan bijvoorbeeld gebeuren via toetsaanslagen (KEYUP/KEYDOWN).
+
+- ``OnActionReceived`` -> De wijzigingen die het spelobject van de eagent moet ondergaan wanneer de speler via ``Heuristic`` of het ``NN`` voorstelt om een bepaalde actie uit te voeren.
+
+- ``OnTriggerEnter`` -> Deze functie word uitgevoerd wanneer er wordt gedetecteerd dat 2 3D objecten met elkaar **botsen** (in aanraking komen).
+
+- ``Jump`` -> Deze methode zal ervoor zorgen dat de **Thief (Dief) 3D object** zal springen over de **traveller** die op zijn pad terecht komt.
 
 
-![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) Object variabelen <a name="thief2"></a>
-<br>
-<br>
+![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **Object variabelen** <a name="thief2"></a>
 The second paragraph text
 
 ![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) Initialiseer de dief <a name="thief3"></a>
