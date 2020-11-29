@@ -344,7 +344,8 @@ void Start()
 ```
 En nu kunnen we het ``Environment`` script gaan koppelen met de *Traveller* zoals op onderstaande afbeelding.
 <br>
-<img alt="header-image" width="50%" height="50%" align="center" src="https://user-images.githubusercontent.com/56048370/100549168-93f60800-3271-11eb-8fe7-2cd2cbb0af6a.png"/>
+<br>
+<img alt="header-image" width="50%" height="50%" align="center" src="https://user-images.githubusercontent.com/56048370/100549525-a8d39b00-3273-11eb-8ce7-6251eaf618ef.png"/>
 <br>
 ### ![image info](https://user-images.githubusercontent.com/56048370/100490290-a4479f00-311a-11eb-839d-3ef719df2eb7.png) Traveller.cs <a name="scripts2"></a>
 The second paragraph text
