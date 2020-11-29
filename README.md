@@ -493,18 +493,76 @@ Deze code snippet zal ervoor zorgen dat de Thief (Dief) Agent zal gaan springen 
 Omdat 0 de standaardwaarde is van vectorAction[], is het beter om deze te behouden voor 'het niets doen' van de Agent. Het definiëren van de structuur van ``vectorAction`` gebeurt in de ``Behavior Parameters`` component zoals in onderstaande afbeelding.
 <br>
 <br>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100550957-fd7c1380-327d-11eb-8dea-e1a7d3d80d9c.png"/>
+<br>
+
+![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **OnCollisionEnter** <a name="thief7"></a>
+Deze code snippet zal ervoor zorgen dat er eerst wordt gekeken of er collision is met de ``Street`` object en of dit zijn eerste is van de episode. Dit zal dienen om ervoor te gaan zorgen dat hij geen punten verliest bij de initiële landing "Er zal nog toont worden dat de Thief (Dief) Agent zal afgestraft worden als hij zinloos springt". De ``CompareTag()`` methode wordt gebruikt om de identiteit van het object te achterhalen waarmee de Thief (Dief) Agent in botsing treedt.
+
+```csharp
+ private void OnCollisionEnter(Collision collision)
+{
+    if(collision.gameObject.CompareTag("Street") && firstCollision)
+    {
+        jumpIsReady = true;
+        firstCollision = false;
+    }
+}
+```
+
+Botst de Thief (Dief) Agent op de ``Street`` en heeft hij geen geld gestolen van een Traveller (Reiziger), dan moeten we hem afstraffen om zo de Thief (Dief) Agent aan te leren om alleen te gaan springen als het nodig is.
+
+```csharp
+else if (collision.gameObject.CompareTag("Street") && !stoleMoney) 
+{ 
+     AddReward(-0.2f);
+     jumpIsReady = true;
+}
+```
+
+Botst de Thief (Dief) Agent op de ``Street`` en heeft hij wel succesvol geld gestolen van de Traveller (Reiziger), dan zet je ``jumpIsReady`` op **True** zodat hij terug kan springen en ``stoleMoney`` variabel zal op **False** worden gezet.
+
+```csharp
+else if (collision.gameObject.CompareTag("Street") && stoleMoney)
+{
+      jumpIsReady = true;
+      stoleMoney = false;
+}
+```
+
+Hierna gaan we kijken of er collision heeft plaatsgevonden met de Traveller (Reiziger). Want uiteindelijk is dit iets wat de Thief (Dief) Agent zeker niet mag doen en wordt de Agent hier hard voor afgestraft door **-1** punt af te gaan trekken. Vervolgens wordt de ``EndEpisode()`` methode opgeroepen om de episode te beëindigen.
+
+
+```csharp
+else if (collision.gameObject.CompareTag("Traveller"))
+{
+      AddReward(-1.0f);
+      EndEpisode();
+}
+```
+
+Tenslotte moeten we ook de Thief (Dief) Agent nog  belonen als hij succesvol over de Traveller (Reiziger) object is gesprongen om de reiziger vervolgens te "bestelen". Dit zal gebeuren door de ``OnTriggerEnter()`` methode.
+
+```csharp
+private void OnTriggerEnter(Collider collision)
+{
+    if (collision.gameObject.CompareTag("Point"))
+    {
+         AddReward(0.1f);
+         stoleMoney = true;
+    }
+}
+```
+Als er een collision is met de tag ``"Point"`` dan zal de Thief (Dief) Agent **+0.1** punt erbij krijgen en moet ``stoleMoney`` op **True** gezet worden. Meer uitleg over de ``Point`` object zal hieronder in de volgende topic meegegeven worden.
+
+![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **DestroyObjects** (Optimizations) <a name="thief8"></a>
+Om de performantie tijdens de trainingsfase zo soepel mogelijk te laten verlopen moeten we een manier voorzien om de gespawnde **Travellers (Reizigers)** zo snel mogelijk te verwijderen nadat ze buiten het zicht zijn van de van de **Thief (Dief) Agent**. Om dit voor elkaar te krijgen gaan we een muur creëren en dit achter de Thief (Dief) Agent zetten zodat elke Traveller (Reiziger) dat botst met deze muur zal verwijderd worden van de scene.
+
+Maak een kubus 3D object aan en laat het er ongeveer uitzien als onderstaande afbeelding.
+<br>
+<br>
 <img alt="header-image" width="40%" height="40%" align="center" src=""/>
 <br>
-
-![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) OnCollisionEnter <a name="thief7"></a>
-<br>
-<br>
-The second paragraph text
-
-![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) DestroyObjects (Optimizations) <a name="thief8"></a>
-<br>
-<br>
-The second paragraph text
 
 ## :point_right: Resultaat in Tensorflow na één uur testen  <a name="tensorflow"></a>
 The second paragraph text
