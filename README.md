@@ -159,7 +159,12 @@ De acties die de dief object zal gaan uitvoeren zijn gebaseerd op observaties. O
 
 Zorg ervoor dat zoals op onderstaande foto de **Ray Perception** ter hoogste staat van waar de ogen van de dief object staan. Voeg ook bij de *Detectable tags* de gedownloade **Reiziger object** toe. Dit zal ervoor zorgen dat de sensor de reiziger kan detecteren.
 <br>
-<img alt="header-image" width="40%" height="40%" align="center" src=""/>
+<img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100529232-8c891d00-31e5-11eb-8a4c-5308bc8eda53.png"/>
+<br>
+Voeg een *Behavior parameters* toe met de naam **Thief** :point_down:
+<br>
+<img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100529232-8c891d00-31e5-11eb-8a4c-5308bc8eda53.png"/>
+
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Reiziger object <a name="reizigerobject"></a>
 This is a sub paragraph
