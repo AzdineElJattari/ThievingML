@@ -7,7 +7,7 @@
 
 **<img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100488272-83c51800-310d-11eb-9353-332a22e894a3.png"/> [Youtube](https://www.youtube.com/channel/UCGW01S5Ri2RMa-qqXtO9Tzw?view_as=subscriber) 
 • <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100491240-533ba900-3122-11eb-815b-3beabde80e62.png"/> [Rapporteer bug](https://github.com/AzdineElJattari/ThievingML/issues) 
-• <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100491250-66e70f80-3122-11eb-9f76-c2cdd32ddfdc.png"/> [Vraag feature aan](https://github.com/AzdineElJattari/ThievingML/issues) 
+• <img alt="header-image" align="center" src="https://user-images.githubusercontent.com/56048370/100491250-66e70f80-3122-11eb-9f76-c2cdd32ddfdc.png"/> [Vraag feature aan](https://github.com/AzdineElJattari/ThievingML/issues)** 
 
 </td></tr></table>
 
