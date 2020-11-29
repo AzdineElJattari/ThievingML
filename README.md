@@ -404,22 +404,65 @@ Deze class zal in totaal 6 methoden gaan bevatten.
 
 
 ![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **Object variabelen** <a name="thief2"></a>
-The second paragraph text
 
-![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) Initialiseer de dief <a name="thief3"></a>
-<br>
-<br>
-The second paragraph text
+```csharp
+[SerializeField] private float jumpForce;
+[SerializeField] private KeyCode jumpKey;
+private Vector3 startingPosition;
+private bool jumpIsReady = true;
+private bool stoleMoney = false;
+private bool firstCollision = true;
+private Rigidbody body;
+private Environment environment;
+```
+De ``jumpForce`` variabele zal bepalen hoe hoog of hoe krachtig de jump van de thief (dief) 3D object zal zijn. De ``jumpKey`` geeft de speler de keuze om een bepaalde key toe te voegen voor te jumpen bv. doormiddel van de *spatiebalk*.
+De ``startingPosition`` zal ervoor gaan zorgen dat de startpositie van de thief (dief) 3D object wordt weergegeven. 
 
-![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) OnEpisodeBegin <a name="thief4"></a>
-<br>
-<br>
-The second paragraph text
+De ``jumpIsReady`` variabele is een boolean die **True** zal teruggeven als resultaat als de thief (dief) 3D object niet in de lucht is en **False** teruggeven als de thief (dief) object wel in de lucht is. De ``stoleMoney`` variabele is nodig om te zien of de thief (dief) 3D object succesvol over de traveller (reiziger) is gesprongen *"reiziger succesvol bestolen"*. En ten slotte hebben we de ``rigidBody`` en ``environment`` variabelen aangemaakt om bepaalde methodes aan te roepen.
 
-![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) Heuristic <a name="thief5"></a>
+![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **Initialiseer de dief** <a name="thief3"></a>
+De eenmalige initialisatie van de **Thief (Dief) Agent** moet eruit zien als onderstaande code snippet.
+
+```csharp
+public override void Initialize()
+{
+   body = GetComponent<Rigidbody>();
+   environment = GetComponentInParent<Environment>();
+   startingPosition = transform.position;
+}
+```
+
+![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **OnEpisodeBegin** <a name="thief4"></a>
+Bij aanvang van elke episode, zal de **Thief (Dief) Agent** opnieuw gepositioneerd moeten worden. Alle travellers die ervoor nog overgebleven zijn zullen dan verwijderd worden.
+
+```csharp
+public override void OnEpisodeBegin()
+{
+   jumpIsReady = true;
+   transform.position = startingPosition;
+   body.velocity = Vector3.zero;
+ 
+   environment.ClearEnvironment();
+}
+```
+
+![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **Heuristic** <a name="thief5"></a>
+Deze methode zal helpen om de correcte werking en beloning van de Thief (Dief) Agent te testen zodat, terwijl het in de simulatie zit andere acties kan uitvoeren.
+
+```csharp
+public override void Heuristic(float[] actionsOut)
+{
+    actionsOut[0] = 0;
+    if (Input.GetKey(jumpKey))
+    {
+       actionsOut[0] = 1;
+    }
+}
+```
+In dit geval kan je de Thief (Dief) Agent manueel besturen met de zelf ingestelde ``jumpKey`` toets.
 <br>
+<img alt="header-image" width="40%" height="40%" align="center" src=""/>
 <br>
-The second paragraph text
 
 ![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) OnActionReceived <a name="thief6"></a>
 <br>
