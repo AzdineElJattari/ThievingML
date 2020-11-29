@@ -144,12 +144,20 @@ Selecteer de Dief object in Unity en voeg volgende componenten eraan toe :point_
 
 >Zorg ervoor dat de instellingen van de component *Box Collider* helemaal hetzelfde zijn als de afbeelding hierboven.
 <br>
-:bell: Nadat u bovenstaande instellingen hebt ingevoerd op beide componenten zal u een groen rechthoek te zien krijgen rond de dief object. Deze kunt u vervolgens vergroten of verkleinen door op het vierhoekje te drukken en te slepen. Zorg er wel voor dat de dief object qua formaat ongeveer volledig past in het groene rechthoek.
+> :bell: Nadat u bovenstaande instellingen hebt ingevoerd op beide componenten zal u een groen rechthoek te zien krijgen rond de dief object. Deze kunt u vervolgens vergroten of verkleinen door op het vierhoekje te drukken en te slepen. Zorg er wel voor dat de dief object qua formaat ongeveer volledig past in het groene rechthoek.
 <br>
 <img alt="header-image" width="25%" height="15%" align="center" src="https://user-images.githubusercontent.com/56048370/100528932-80e82700-31e2-11eb-85d6-724951c98007.png"/>
 <br>
-<br>
+<br> 
 De acties die de dief object zal gaan uitvoeren zijn gebaseerd op observaties. Om ervoor te gaan zorgen dat de dief kan gaan observeren maken we gebruiken van **Ray Perception Sensor 3D** component. Voeg het toe met de instellingen vanuit onderstaande afbeelding. :point_down:
+<br>
+<br>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100529081-e557b600-31e3-11eb-83bc-cb860244bae9.png"/>
+<br>
+<br>
+Zorg ervoor dat zoals op onderstaande foto de **Ray Perception** ter hoogste staat van waar de ogen van de dief object staan. Voeg ook bij de *Detectable tags* de gedownloade **Reiziger object** toe. Dit zal ervoor zorgen dat de sensor de reiziger kan detecteren.
+<br>
+<img alt="header-image" width="40%" height="40%" align="center" src=""/>
 
 ### ![image info](https://user-images.githubusercontent.com/56048370/100489562-14532680-3115-11eb-9621-04bcf5aca2a7.png) Reiziger object <a name="reizigerobject"></a>
 This is a sub paragraph
