@@ -40,7 +40,7 @@
         * [OnActionReceived](#thief6)
         * [OnCollisionEnter](#thief7)
         * [DestroyObjects (Optimizations)](#thief8)
-8. [Resultaat in Tensorflow na één uur testen](#tensorflow)
+8. [Resultaat in Tensorflow](#tensorflow)
     
 ## :point_right: Introductie ThievingML <a name="introductie"></a>
 In deze tutorial zullen we u als opkomende Machine Learning developer stap voor stap begeleiden hoe u doormiddel van *Machine Learning* - *ML Agents* en het gebruik van *Unity3D* en *C#* code een basic project tot stand kan brengen. Ook voor mensen **zonder** programmeer ervaring is het mogelijk om deze tutorial te volgen en succesvol de ThievingML project tot stand te brengen.
@@ -604,6 +604,63 @@ Vervolgens voegt u een tag toe genaamd *Point*. Vervolgens gaan we nu nog de lay
 <img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100551638-3ddd9080-3282-11eb-88b0-f6b91e87d0ef.png"/>
 <br>
 <br>
+Als laatste stap bekijken we kort de trainingsfase. Maakt een bestand in de *root* folder van je project genaamd *learning*. Hier binnen in maakt u een **.yml** bestand aan met de als naam **Thief** -> **Thief.yml**. Binnenin deze file plakt u onderstaande instellingen.
 
-## :point_right: Resultaat in Tensorflow na één uur testen  <a name="tensorflow"></a>
-The second paragraph text
+```yaml
+behaviors:
+  Thief:
+    trainer_type: ppo
+    max_steps: 5.0e7
+    time_horizon: 64
+    summary_freq: 10000
+    keep_checkpoints: 5
+    checkpoint_interval: 50000
+    
+    hyperparameters:
+      batch_size: 32
+      buffer_size: 9600
+      learning_rate: 3.0e-4
+      learning_rate_schedule: constant
+      beta: 5.0e-3
+      epsilon: 0.2
+      lambd: 0.95
+      num_epoch: 3
+ 
+    network_settings:
+      num_layers: 2
+      hidden_units: 128
+      normalize: false
+      vis_encoder_type: simple
+ 
+    reward_signals:
+      extrinsic:
+        strength: 1.0
+        gamma: 0.99
+      curiosity:
+        strength: 0.02
+        gamma: 0.99
+        encoding_size: 256
+        learning_rate : 1e-3
+```
+Zorg er ook voor dat de *Behavior Parameters* **Thief** overeenkomt met die in de **.yml** bestand anders zal het niet werken.
+<br>
+<br>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100552079-2ce24e80-3285-11eb-88a3-2749cbbd0135.png"/>
+<br>
+<br>
+Hieronder nog enkele afbeeldingen met kleine aanpassingen die moeten gebeuren in Unity voor de **Thief (Script)**
+<br>
+<br>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100552096-44b9d280-3285-11eb-8113-89611ac317e9.png"/>
+<br>
+<br>
+**LET OP: bij onderstaande afbeelding zetten we de *jumpforce* op 32. VERVOLGENS klikken op -> Edit -> Project settings -> Gravity op -70** Dit zal ervoor zorgen dat wanneer de Thief (Dief) Agent springt hij niet heel langzaam naar beneden zal komen.
+<br>
+<br>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100552101-4aafb380-3285-11eb-911f-65f360b0b16b.png"/>
+
+## :point_right: Resultaat in Tensorflow <a name="tensorflow"></a>
+Onderstaande afbeelding geeft de resultaat weer na één uur testen in Tensforflow <img alt="header-image" width="20" height="20" align="center" src="https://user-images.githubusercontent.com/56048370/100491704-11acfd00-3126-11eb-89af-1b9d01264ffb.png"/>
+<br>
+<br>
+<img alt="header-image" width="70%" height="70%" align="center" src="https://user-images.githubusercontent.com/56048370/100552105-513e2b00-3285-11eb-8807-2c0615ae9e3e.png"/>
