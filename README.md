@@ -186,7 +186,7 @@ Selecteer de Reiziger object in Unity en voeg volgende componenten eraan toe :po
 
 **Rigidbody**
 <br>
-<img alt="header-image" width="40%" height="40%" align="center" src=""/>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100529596-56e63300-31e9-11eb-9234-415f6da029e4.png"/>
 <br>
 >Zorg ervoor dat de instellingen van de component *Rigibody* helemaal hetzelfde zijn als de afbeelding hierboven.
 <br>
