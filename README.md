@@ -1,5 +1,5 @@
 <p align="center"><img alt="header-image" src="https://user-images.githubusercontent.com/56048370/100483716-28d5f580-30fa-11eb-887e-fc7a82af392c.png" width="100"/></p>
-<h2 align="center">Thieving ML</h2>
+<h1 align="center">ThievingML</h1>
 <p align="center">:robot: Dit is een eenvoudig tutorial die u zal doen kennismaken met de wereld van Machine Learning :robot:</p>
 <br>
   
@@ -217,8 +217,7 @@ Hieronder zullen we stapsgewijs per 3D object bekijken wat er moet staan in de s
 ### ![image info](https://user-images.githubusercontent.com/56048370/100490290-a4479f00-311a-11eb-839d-3ef719df2eb7.png) Environment.cs <a name="scripts"></a>
 In het *Environment.cs* script bestand staat er code in om de **Traveller (Reiziger) / Thief (Dief)** te doen spawnen op het platform. Al deze handelingen zullen bij het runnen van het project automatisch worden uitgevoerd door Unity.
 
-![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Overzicht methodes van de omgeving <a name="environment"></a>
-<br>
+![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) **Overzicht methodes van de omgeving** <a name="environment"></a>
 <br>
 Maak een nieuw folder aan in de project folder genaamd *Scripts*. Hierin zullen alle script bestanden staan die we gaan creëren en zullen gebruiken op het juiste 3D object. De eerste script bestandje die we zullen maken krijgt de naam *Environment*. In de ``Environment Class`` zullen we volgende methodes gaan aanmaken.
 
@@ -230,23 +229,67 @@ Maak een nieuw folder aan in de project folder genaamd *Scripts*. Hierin zullen 
 
 ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Object-variabelen van de omgeving <a name="environment2"></a>
 <br>
-<br>
-This is a sub paragraph
+We zullen een aantal *Public* object-variabelen gaan creëren.
+
+```csharp
+public Traveller travellerPrefab;
+
+private Thief thief;
+
+private TextMeshPro scoreBoard;
+
+private GameObject travellers;
+
+public float spawnTime;
+
+public float delayInBetween;
+```
+De variabel ``travellerPrefab`` zal **manueel** door de ontwikkelaar (developer) moeten gekoppeld worden via de Unity GUI. 
+De twee variabele ``spawnTime`` en ``delayInBetween`` worden in de methode ``InvokeRepeating()`` gezet om zo te kunnen bepalen om de hoeveel keer een traveller gespawnd zal doen worden.
+
+De rest van de variabelen zijn ``private`` en zullen ervoor zorgen dat de simulatie-omgeving een referentie heeft naar de agent, de variabelen ``scoreBoard`` en ``travellers`` zullen ook een referentie krijgen naar de simulatie-omgeving.
 
 ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Initialisatie van de omgeving instantie <a name="environment3"></a>
 <br>
-<br>
-This is a sub paragraph
+Tijdens de initialisatie zullen bovenstaande referenties worden ingevuld door de volgende methode. :point_down:
 
-![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Opkuisen van het speelveld <a name="environment4"></a>
+```csharp
+  public void OnEnable()
+    {
+        travellers = transform.Find("Travellers").gameObject;
+        scoreBoard = transform.GetComponentInChildren<TextMeshPro>();
+        thief = transform.GetComponentInChildren<Thief>();        
+    }
+```
+Merk hierbij wel op dat de ``Find()`` methode en ``GetComponentInChildren()`` methode op de ``transform`` van ``Environment`` ervoor moeten zorgen dat uitsluitend child-objecten worden teruggegeven. Dit is belangrijk omdat we later de hele simulatie-omgeving gaan dupliceren binnen dezelfde scene in Unity. Andere methoden zoas ``GameObject.FindGameObjectWithTag`` zouden dus mogelijk de verkeerde referenties doorgeven, i.e. referenties naar objecten van een ander simulatie-omgeving, zonder hiervoor een foutmelding te geven.
+
+![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Opkuisen van het veld <a name="environment4"></a>
 <br>
-<br>
-This is a sub paragraph
+Bij het begin van elke episode zal het veld opnieuw in zijn beginsituatie terecht komen alvorens er nieuwe travellers worden gegenereerd.
+
+```csharp
+public void ClearEnvironment()
+    {
+        travellers = transform.Find("Travellers").gameObject;
+        foreach (Transform traveller in travellers.transform)
+        {
+            GameObject.Destroy(traveller.gameObject);
+        }
+    }
+```
+
 
 ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Scorebord <a name="environment5"></a>
 <br>
 <br>
-This is a sub paragraph
+Het scorebord moet continu de **belonging** (=score) gaan weergeven. Dit zal gebeuren door eenvoudigweg gebruik te gaan maken van de *getter* van de methode ``GetCumulativeReward()`` vanuit de ``Agent class``.
+
+```csharp
+private void FixedUpdate()
+{
+        scoreBoard.text = thief.GetCumulativeReward().ToString("f2");
+}
+```
 
 ![image info](https://user-images.githubusercontent.com/56048370/100489836-2b931380-3117-11eb-98ea-59fd67012cb0.png) Genereren van een traveller <a name="environment6"></a>
 <br>
