@@ -461,13 +461,40 @@ public override void Heuristic(float[] actionsOut)
 ```
 In dit geval kan je de Thief (Dief) Agent manueel besturen met de zelf ingestelde ``jumpKey`` toets.
 <br>
-<img alt="header-image" width="40%" height="40%" align="center" src=""/>
+<br>
+<img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100550687-e4726300-327b-11eb-8fdf-c8cacf703273.png"/>
 <br>
 
-![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) OnActionReceived <a name="thief6"></a>
+![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **OnActionReceived** <a name="thief6"></a>
+Deze methode zal zodanig functioneren dat het zal zorgen voor de vertaling van een voorgestelde actie naar bewegingen of andere wijzigingen van het 3D object van de Agent. Acties worden als een getallenreeks gecodeerd en dusdanig doorgegeven vanuit het ``NN`` of via de *Heuristic-methode*. Voor de Thief (Dief) Agent is er gekozen om discrete acties te ontvangen (t.o.v. continue waardes).
+
+```csharp
+private void Jump()
+{
+     if (jumpIsReady)
+     {
+         body.AddForce(new Vector3(0, jumpForce, 0), ForceMode.VelocityChange);
+         jumpIsReady = false;
+     }
+}
+```
+
+```csharp
+public override void OnActionReceived(float[] vectorAction)
+{
+    if (Mathf.FloorToInt(vectorAction[0]) == 1) // 0 = Stilstand / 1 = Springen
+    {
+       Jump();
+    }      
+}
+```
+Deze code snippet zal ervoor zorgen dat de Thief (Dief) Agent zal gaan springen als ``jumpIsReady`` *True* is, dit dient om ervoor te zorgen dat de Thief (Dief) Agent alleen kan gaan springen als hij op *Street* -> *Op de grond* is. 
+
+Omdat 0 de standaardwaarde is van vectorAction[], is het beter om deze te behouden voor 'het niets doen' van de Agent. Het definiëren van de structuur van ``vectorAction`` gebeurt in de ``Behavior Parameters`` component zoals in onderstaande afbeelding.
 <br>
 <br>
-The second paragraph text
+<img alt="header-image" width="40%" height="40%" align="center" src=""/>
+<br>
 
 ![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) OnCollisionEnter <a name="thief7"></a>
 <br>
