@@ -388,6 +388,7 @@ public class Thief : Agent
 ```
 
 ![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **Overzicht van methodes** <a name="thief"></a>
+<br>
 Deze class zal in totaal 6 methoden gaan bevatten.
 
 - ``Initialize`` -> Zal zorgen voor een eenmalige initialisatie van de Agent.
@@ -421,6 +422,7 @@ De ``startingPosition`` zal ervoor gaan zorgen dat de startpositie van de thief 
 De ``jumpIsReady`` variabele is een boolean die **True** zal teruggeven als resultaat als de thief (dief) 3D object niet in de lucht is en **False** teruggeven als de thief (dief) object wel in de lucht is. De ``stoleMoney`` variabele is nodig om te zien of de thief (dief) 3D object succesvol over de traveller (reiziger) is gesprongen *"reiziger succesvol bestolen"*. En ten slotte hebben we de ``rigidBody`` en ``environment`` variabelen aangemaakt om bepaalde methodes aan te roepen.
 
 ![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **Initialiseer de dief** <a name="thief3"></a>
+<br>
 De eenmalige initialisatie van de **Thief (Dief) Agent** moet eruit zien als onderstaande code snippet.
 
 ```csharp
@@ -433,6 +435,7 @@ public override void Initialize()
 ```
 
 ![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **OnEpisodeBegin** <a name="thief4"></a>
+<br>
 Bij aanvang van elke episode, zal de **Thief (Dief) Agent** opnieuw gepositioneerd moeten worden. Alle travellers die ervoor nog overgebleven zijn zullen dan verwijderd worden.
 
 ```csharp
@@ -447,6 +450,7 @@ public override void OnEpisodeBegin()
 ```
 
 ![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **Heuristic** <a name="thief5"></a>
+<br>
 Deze methode zal helpen om de correcte werking en beloning van de Thief (Dief) Agent te testen zodat, terwijl het in de simulatie zit andere acties kan uitvoeren.
 
 ```csharp
@@ -466,6 +470,7 @@ In dit geval kan je de Thief (Dief) Agent manueel besturen met de zelf ingesteld
 <br>
 
 ![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **OnActionReceived** <a name="thief6"></a>
+<br>
 Deze methode zal zodanig functioneren dat het zal zorgen voor de vertaling van een voorgestelde actie naar bewegingen of andere wijzigingen van het 3D object van de Agent. Acties worden als een getallenreeks gecodeerd en dusdanig doorgegeven vanuit het ``NN`` of via de *Heuristic-methode*. Voor de Thief (Dief) Agent is er gekozen om discrete acties te ontvangen (t.o.v. continue waardes).
 
 ```csharp
@@ -497,6 +502,7 @@ Omdat 0 de standaardwaarde is van vectorAction[], is het beter om deze te behoud
 <br>
 
 ![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **OnCollisionEnter** <a name="thief7"></a>
+<br>
 Deze code snippet zal ervoor zorgen dat er eerst wordt gekeken of er collision is met de ``Street`` object en of dit zijn eerste is van de episode. Dit zal dienen om ervoor te gaan zorgen dat hij geen punten verliest bij de initiële landing "Er zal nog toont worden dat de Thief (Dief) Agent zal afgestraft worden als hij zinloos springt". De ``CompareTag()`` methode wordt gebruikt om de identiteit van het object te achterhalen waarmee de Thief (Dief) Agent in botsing treedt.
 
 ```csharp
@@ -555,7 +561,8 @@ private void OnTriggerEnter(Collider collision)
 ```
 Als er een collision is met de tag ``"Point"`` dan zal de Thief (Dief) Agent **+0.1** punt erbij krijgen en moet ``stoleMoney`` op **True** gezet worden. Meer uitleg over de ``Point`` object zal hieronder in de volgende topic meegegeven worden.
 
-![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **DestroyObjects** (Optimizations) <a name="thief8"></a>
+![image info](https://user-images.githubusercontent.com/56048370/100490645-1c16c900-311d-11eb-9ebb-79a9f7bfa543.png) **DestroyObjects (Optimizations)** <a name="thief8"></a>
+<br>
 Om de performantie tijdens de trainingsfase zo soepel mogelijk te laten verlopen moeten we een manier voorzien om de gespawnde **Travellers (Reizigers)** zo snel mogelijk te verwijderen nadat ze buiten het zicht zijn van de van de **Thief (Dief) Agent**. Om dit voor elkaar te krijgen gaan we een muur creëren en dit achter de Thief (Dief) Agent zetten zodat elke Traveller (Reiziger) dat botst met deze muur zal verwijderd worden van de scene.
 
 Maak een kubus 3D object aan en laat het er ongeveer uitzien als onderstaande afbeelding.
