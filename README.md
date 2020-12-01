@@ -136,7 +136,6 @@ Selecteer de Dief object in Unity en voeg volgende componenten eraan toe :point_
 <br>
 >Zorg ervoor dat de instellingen van de component *Rigibody* helemaal hetzelfde zijn als de afbeelding hierboven.
 <br>
-<br>
 
 **Box Collider**
 <br>
