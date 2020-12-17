@@ -60,7 +60,7 @@ Let's roll! :wink:
 
 ## :point_right: Spelverloop <a name="spelverloop"></a>
 Het spelverloop zal in deze hoofdstuk kort schematisch worden voorgesteld. In het spel dat u zal gaan ontwikkelen zullen er 2 objecten zijn met een hoofdrol.
-Enerzijds hebben we de **Thief (Dief)** anderzijds hebben we de **Traveller (Reiziger)**. De dief is diegene die doormiddel van *Machine Learning* zal gaan leren om zo snel mogelijk onder knie te krijgen wanneer er een reiziger passeert op zijn pad om vervolgens te gaan springen zodat hij de reiziger dan succesvol kan gaan 'bestelen' en vervolgens zal de Agent **beloont** worden.
+Enerzijds hebben we de **Thief (Dief)** anderzijds hebben we de **Traveller (Reiziger)**. De dief is diegene die doormiddel van *Machine Learning* zal gaan leren om zo snel mogelijk onder knie te krijgen wanneer er een reiziger passeert op zijn pad om vervolgens te gaan springen zodat hij de reiziger dan succesvol kan gaan 'bestelen' en zo zal vervolgens de Agent **beloont** worden.
 <br>
 <br>
 **Detecteer fase** :point_down:
@@ -72,7 +72,7 @@ Enerzijds hebben we de **Thief (Dief)** anderzijds hebben we de **Traveller (Rei
 **Spring fase** :point_down:
 <br>
 <br>
-Wanneer er dus een reiziger zal passeren zal de dief doormiddel van *sensoren* die zitten verwerkt in de ogen gaan omhoog gaan springen om zo succesvol langs achter in de zakken te zitten van de reiziger. Nu vraagt u zich nu af maar wat als de Agent er niet in slaagt om over de reiziger te springen? <br> Dan zal er een **bestraffing** plaats vinden. Ook zal er in het spel een scorebord zichtbaar zijn die u als developer duidelijk zal aantonen wanneer de Agent wordt *beloont | gestraft*. Heel dit process zal zich blijven herhalen. Na verloop van tijd zal u bij het trainen van de Agent ook door hebben dat er niet meer gestraft zal worden en dus de Agent succesvol over de reiziger zal blijven springen.
+Wanneer er dus een reiziger passeert zal de dief doormiddel van *sensoren* die zitten verwerkt in de ogen,omhoog gaan springen om zo succesvol langs achter in de zakken te zitten van de reiziger. Nu vraagt u zich waarschijnlijk af: maar wat als de Agent er niet in slaagt om over de reiziger te springen? <br> Dan zal er een **bestraffing** plaats vinden. Ook zal er in het spel een scorebord zichtbaar zijn die u als developer duidelijk zal aantonen wanneer de Agent wordt *beloont | gestraft*. Heel dit process zal zich blijven herhalen. Na verloop van tijd zal u bij het trainen van de Agent ook door hebben dat er niet meer gestraft zal worden en dus de Agent succesvol over de reiziger zal blijven springen.
 <br>
 <br>
 <img alt="header-image" width="60%" height="60%" align="center" src="https://user-images.githubusercontent.com/56048370/100524479-c55ecd00-31b8-11eb-8c17-10c0b4aa21e9.png"/>
