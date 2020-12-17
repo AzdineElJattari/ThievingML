@@ -149,9 +149,11 @@ Selecteer de Dief object in Unity en voeg volgende componenten eraan toe :point_
 
 <br>
 <img alt="header-image" width="25%" height="15%" align="center" src="https://user-images.githubusercontent.com/56048370/100528932-80e82700-31e2-11eb-85d6-724951c98007.png"/>
-<br> 
+<br>
+
 De acties die de dief object zal gaan uitvoeren zijn gebaseerd op observaties. 
-Om ervoor te gaan zorgen dat de dief kan gaan observeren maken we gebruiken van _Ray Perception Sensor3D_ component. Voeg het toe met de instellingen vanuit onderstaande afbeelding. :point_down:
+Om ervoor te gaan zorgen dat de dief kan gaan observeren maken we gebruiken van **Ray Perception Sensor3D** component. Voeg het toe met de instellingen vanuit onderstaande afbeelding. :point_down:
+
 <br>
 <br>
 <img alt="header-image" width="40%" height="40%" align="center" src="https://user-images.githubusercontent.com/56048370/100529081-e557b600-31e3-11eb-83bc-cb860244bae9.png"/>
